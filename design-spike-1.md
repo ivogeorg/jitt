@@ -76,3 +76,12 @@ _Meetings_ are class periods, where the instructor and the students meet, in per
 2. I want to have alerts about the per-class deadlines for _warmup questions_.  
 3. I want to be able to edit my answers before the corresponding deadline.  
 4. I want to have the questions sent to me over email and apps that I use (e.g. Teams, FB Messenger).  
+
+## 9. Technical details
+
+A web application with Node.js, React, supported initially by a relational database (TBD).
+
+### Questions
+
+1. What about mobile?  
+2. 
