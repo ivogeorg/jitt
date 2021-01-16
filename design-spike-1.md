@@ -62,7 +62,7 @@ _Meetings_ are class periods, where the instructor and the students meet, in per
 ## 6. Question data
 
 1. (UID per "Instructor ID", "Course catalog ID", "Term ID", and "Section ID") Question ID.  
-2. (UID per 
+2. Question text. _Should multimedia questions (that is, "cards") be supported? This will vastly complicate the design._  
 2. (set) Answers.  
 
 ## 7. Answer data
