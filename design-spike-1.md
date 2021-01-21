@@ -40,7 +40,8 @@ Table of Contents
 10. During class meeting, instructor shows some curated information from the warmups  
     1. Question text and images (remind students, or for students who didn't do it)
     2. Aggregate responses categorized by the instructor when reading a sample of student responses. (see slide examples)
-    3. Anonymous responses from some students, especially the "useful wrong answers."
+    3. Anonymous responses from some students, especially the "useful wrong answers."  
+11. Ideally the student view of questions is LMS embeddable  
 
 ### Question banks.  
 1. Questions can be flagged with coneptual topics
