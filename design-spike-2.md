@@ -38,25 +38,25 @@ Table of Contents
 ## 1. Instructor stories
 
 1. I want to ask my students a small number of _warmup questions_ (see [Question](#question)) before every class period (see [Meeting](#meeting).
-2. Answering (see [Answer](#answer)) the questions shouldn't take a student more than 25 minutes.  
+2. Answering (see [Answer](#answer)) the questions shouldn't take a student more than 25 minutes. (I think this can be removed)  
 3. I want to be able to quickly review the answers, possibly group them, and select some as discussion triggers (aka hooks, engagement elements, etc.) for class.  
-   1. View all answers to a given question in one compact list, differentiate each student's response with different subtle highlight. (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** Clarify.)    
+   1. View all answers to a given question in one compact list, differentiate each student's response with different subtle highlight. See example in files.  
    2. Sort student responses in a few ways. For example:
       1. By timestamp.
       2. Alphabetical by last name.
       3. Randomized. 
-4. I want to be able to load up questions for the class periods for a whole semester, and have the flexibility to adjust to the way the specific class is moving through the material.  
+4. I want to be able to load up questions for the class periods for a whole semester, and have the flexibility to adjust to the way the specific class is moving through the material. Easily move a question from one WarmUp to another, change the order of WarmUps.  
 5. I want to be able to import questions:
    1. From csv, spreadsheet, etc. and then arrange them.  
    2. From a previous edition of the same class.  
 6. I want to be able to export questions to csv or spreadsheet.  
 7. I want to be able to edit the text of a question, both while it is unassigned (that is, in a [question bank](#11-question-banks)) and assigned (so the unassigned and assigned can differ).  
-8. I want to be able to optionally grade student responses.  
+8. I want the option to have the computer assign grades automatically (auto-grade) to student responses.  
    1. Select mode:
       1. Auto-grade for participation. (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** Provide a sample rubric.)
-      2. Auto-grade for correctness. (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** How?)  
-      3. No auto-grade. (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** Is this equivalent to "manual" or to "no grading"? Are the two to be distinguished?)  
-   2. Customize point value per question. (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** Example?)   
+      2. Auto-grade for correctness. (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** How?)  (@ivogeorg The system should allow for multiple-choice (single or many) questions.)
+      3. No auto-grade (meaning, manual grading only). 
+   2. Customize point value per question. Meaning, a question might be worth 1, 2 or 4 points, etc. 
    3. Manually adjust the grade for a student response at the same time (same view) as reviewing responses. Simple +/- buttons to increase/decrease grades.  
 9. Email individual students (from my default email client) about their response with one click from the basic "view responses" view.  
    1. Emails are based on templates.
