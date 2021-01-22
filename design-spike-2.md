@@ -1,4 +1,4 @@
-# Design spike 2 for [jiit](https://github.com/ivogeorg/jitt)
+# Design spike 2 for [jitt](https://github.com/ivogeorg/jitt)
 
 ```
   _____ _   _   _____  _____   ____   _____ _____  ______  _____ _____ 
@@ -40,7 +40,7 @@ Table of Contents
 1. I want to ask my students a small number of _warmup questions_ (see [Question](#question)) before every class period (see [Meeting](#meeting).
 2. Answering (see [Answer](#answer)) the questions shouldn't take a student more than 25 minutes.  
 3. I want to be able to quickly review the answers, possibly group them, and select some as discussion triggers (aka hooks, engagement elements, etc.) for class.  
-   1. View all answers to a given question in one compact list, differentiate each student's response with different subtle highlight. (**TODO:** Clarify.)    
+   1. View all answers to a given question in one compact list, differentiate each student's response with different subtle highlight. (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** Clarify.)    
    2. Sort student responses in a few ways. For example:
       1. By timestamp.
       2. Alphabetical by last name.
@@ -53,10 +53,10 @@ Table of Contents
 7. I want to be able to edit the text of a question, both while it is unassigned (that is, in a [question bank](#11-question-banks)) and assigned (so the unassigned and assigned can differ).  
 8. I want to be able to optionally grade student responses.  
    1. Select mode:
-      1. Auto-grade for participation. (**TODO:** Provide a sample rubric.)
-      2. Auto-grade for correctness. (**TODO:** How?)  
-      3. No auto-grade. (**TODO:** Is this equivalent to "manual" or to "no grading"? Are the two to be distinguished?)  
-   2. Customize point value per question. (**TODO:** Example?)   
+      1. Auto-grade for participation. (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** Provide a sample rubric.)
+      2. Auto-grade for correctness. (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** How?)  
+      3. No auto-grade. (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** Is this equivalent to "manual" or to "no grading"? Are the two to be distinguished?)  
+   2. Customize point value per question. (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** Example?)   
    3. Manually adjust the grade for a student response at the same time (same view) as reviewing responses. Simple +/- buttons to increase/decrease grades.  
 9. Email individual students (from my default email client) about their response with one click from the basic "view responses" view.  
    1. Emails are based on templates.
@@ -73,8 +73,8 @@ Table of Contents
       4. Assembling instructor feedback for all questions for each student.
       5. Mailing each student.
 10. During class meeting, I want to show some curated information from the warmups:  
-    1. Question text and images (remind students, or for students who didn't do it) (**TODO:** Reduce conflated features.)
-    2. Aggregate responses categorized by the instructor when reading a sample of student responses. (see slide examples) (**TODO:** Where were they sent?)
+    1. Question text and images (remind students, or for students who didn't do it) (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** Reduce conflated features.)
+    2. Aggregate responses categorized by the instructor when reading a sample of student responses. (see slide examples) (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** Where were they sent?)
     3. Anonymous responses from some students, especially the "useful wrong answers."  
 11. Ideally the student view of questions is LMS embeddable.  
 
@@ -140,7 +140,7 @@ _Notes: Cards are semi-independent embeddable interactive units of rich multimed
 
 _Notes: Class is an instance (sometimes synonymous to "section") of a course, in time priod (e.g. semester) and place (school)._
 
-**TODO (@ivogeorg):** Makes sense to have Class ID!
+**TODO ([@ivogeorg](https://github.com/ivogeorg)):** Makes sense to have Class ID!
 
 1. (GUID, _composite, partially readable_) Course catalog ID.  
 2. (GUID, _composite, partially readable_) Offering school ID.  
@@ -174,7 +174,7 @@ _Notes: Meetings are class periods, where the instructor and the students meet, 
 
 ## 5. Question
 
-1. (UID per "Instructor ID", "Course catalog ID", "Term ID", and "Section ID") Question ID.  **TODO (@ivogeorg):** Need to lay out the schema to get this one right!
+1. (UID per "Instructor ID", "Course catalog ID", "Term ID", and "Section ID") Question ID.  **TODO ([@ivogeorg](https://github.com/ivogeorg)):** Need to lay out the schema to get this one right!
 2. Card data:  
    1. Mathematical expressions  
    2. HTML links  
@@ -232,7 +232,7 @@ _Notes: Workflows showd translate into detailed UI specs._
 
 # Implementation notes
 
-1. A web application with Node.js, React, supported initially by a database.  **TODO (@ivogeorg):** Stacks website, MEAN stack.  
+1. A web application with Node.js, React, supported initially by a database.  **TODO ([@ivogeorg](https://github.com/ivogeorg)):** Stacks website, MEAN stack.  
 2. The data has schema, but should not be as rigid as classic relational schema. Keys where necessary, mappings otherwise. Uniqueness still has to be enforceable.  For example, Digest is associated with Meeting, but need not have a key relationship with it.
 3. Taking the previous point further, UIDs per this and that are hard to maintain, whereas GUID generation is super simple. For example, Google's myriad types of search and ad data is based on trillions of GUIDs. Switch to GUIDs. As a result:
    1. Uniqueness need not be enforced up-front, but becomes post factum repairable. 
