@@ -1,8 +1,22 @@
-# Design spike 1 for [jiit](https://github.com/ivogeorg/jitt)
+# Design spike 2 for [jiit](https://github.com/ivogeorg/jitt)
 
 **Date:** 2021-01-21
 
+Table of Contents
+=================
 
+* [Design spike 1 for <a href="https://github\.com/ivogeorg/jitt">jiit</a>](#design-spike-1-for-jiit)
+  * [1\. Instructor stories](#1-instructor-stories)
+    * [Question banks\.](#question-banks)
+  * [2\. Instructor data](#2-instructor-data)
+  * [3\. Class data](#3-class-data)
+  * [4\. Student data](#4-student-data)
+  * [5\. Meeting data](#5-meeting-data)
+  * [6\. Question data](#6-question-data)
+  * [7\. Answer data](#7-answer-data)
+  * [8\. Student stories](#8-student-stories)
+  * [9\. Technical details](#9-technical-details)
+    * [Questions](#questions)
 
 ## 1. Instructor stories
 
