@@ -1,22 +1,9 @@
 # Design spike 2 for [jiit](https://github.com/ivogeorg/jitt)
 
-**Date:** 2021-01-21
+**Date:** 2021-01-22
 
-Table of Contents
-=================
 
-* [Design spike 1 for <a href="https://github\.com/ivogeorg/jitt">jiit</a>](#design-spike-1-for-jiit)
-  * [1\. Instructor stories](#1-instructor-stories)
-    * [Question banks\.](#question-banks)
-  * [2\. Instructor data](#2-instructor-data)
-  * [3\. Class data](#3-class-data)
-  * [4\. Student data](#4-student-data)
-  * [5\. Meeting data](#5-meeting-data)
-  * [6\. Question data](#6-question-data)
-  * [7\. Answer data](#7-answer-data)
-  * [8\. Student stories](#8-student-stories)
-  * [9\. Technical details](#9-technical-details)
-    * [Questions](#questions)
+# User stories
 
 ## 1. Instructor stories
 
@@ -43,12 +30,36 @@ Table of Contents
     3. Anonymous responses from some students, especially the "useful wrong answers."  
 11. Ideally the student view of questions is LMS embeddable  
 
-### Question banks.  
-1. Questions can be flagged with coneptual topics
-2. Questions can be flagged with "question level" : conceptual, algebra-based, calc-based, upper-division, graduate-level
-3. Quesitons can be searched by users based on: author, topic, question level, date, course name
+### 1.1. Question banks
 
-## 2. Instructor data
+1. Questions can be flagged with conceptual topics.  
+2. Questions can be flagged with question level, most likely to follow adopted and/or conventional scale of academic difficulty. 
+   1. For example, for physics, these can be:
+      1. Conceptual.  
+      2. Algebra-based.   
+      3. Calculus-based. 
+      4. Upper-division.  
+      5. Graduate-level.  
+   2. In general, these should be configurable by the instructor.  
+3. Quesitons can be searched by users based on:
+   1. Author.  
+   2. Topic.  
+   3. Question level.  
+   4. Date.  
+   5. Course name.   
+   
+
+## 2. Student stories
+
+1. I want to have an easy interface to answer _warmup questions_ on any device.  
+2. I want to have alerts about the pre-class deadlines for _warmup questions_.  
+3. I want to be able to edit my answers before the corresponding deadline.  
+4. I want to have the questions sent to me over email and apps that I use (e.g. Teams, FB Messenger).  
+5. I want to be able to review questions, my responses and the grades I got, after the deadline.  
+
+# Data
+
+## 1. Instructor
 
 1. (GUID) Instructor ID.  
 2. Name. _Need to have a disambiguation mechanism during registration and GUID assignment. People should be uniquely identified. That should include school, department, email address, possibly DOB, possibly CC._
@@ -59,7 +70,9 @@ Table of Contents
 7. _(encripted)_ Password. _Support changing the password._    
 8. (set) Classes.
 
-## 3. Class data
+## 2. Class
+
+_Notes: Class is an instance (sometimes synonymous to "section") of a course, in time and place._
 
 1. (GUID) Course catalog ID.  
 2. (GUID) Offering school ID.  
@@ -72,7 +85,7 @@ Table of Contents
 9. (set) Students.  
 10. (set) Meetings.  
 
-## 4. Student data
+## 3. Student data
 
 1. (GUID) Student ID.  
 2. Name.  
@@ -81,9 +94,9 @@ Table of Contents
 5. _(encripted)_ Password. _Support changing the password._    
 6. (set) Classes.  
 
-## 5. Meeting data
+## 4. Meeting data
 
-_Meetings_ are class periods, where the instructor and the students meet, in person or online.
+_Notes: Meetings are class periods, where the instructor and the students meet, in person or online._
 
 1. (UID per "Instructor ID", "Course catalog ID", "Term ID", and "Section ID") Meeting ID.
 2. (UID per "Meeting ID") Order index.  
@@ -94,7 +107,7 @@ _Meetings_ are class periods, where the instructor and the students meet, in per
    2. Aggregated response pattern, a.k.a. clustering (37% gave this kind of response, 29% gave that kind of response, 20% showed confusion).
    3. Selected student responses presented anonymously. Responses can be displayed in a certain order.
 
-## 6. Question data
+## 5. Question data
 
 1. (UID per "Instructor ID", "Course catalog ID", "Term ID", and "Section ID") Question ID.  
 2. Question text. _Should multimedia questions (that is, "cards") be supported? This will vastly complicate the design._  
@@ -105,7 +118,7 @@ _Meetings_ are class periods, where the instructor and the students meet, in per
    4. Embed images  
 2. (set) Answers.  
 
-## 7. Answer data
+## 6. Answer data
 
 1. (UID per "Question ID", "Student ID", "Course ID", "Term ID") Answer ID.
 2. Selected for class. _This might require more input from an experienced user._  
@@ -113,19 +126,11 @@ _Meetings_ are class periods, where the instructor and the students meet, in per
    1. Mathematical expressions  
 4. Responses flagged to be presented in the meeting view. The system tracks and displays how many times a particular student has has their answer flagged for display.
    
-## 8. Student stories
+# Implementation notes
 
-1. I want to have an easy interface to answer _warmup questions_ on any device.  
-2. I want to have alerts about the pre-class deadlines for _warmup questions_.  
-3. I want to be able to edit my answers before the corresponding deadline.  
-4. I want to have the questions sent to me over email and apps that I use (e.g. Teams, FB Messenger).  
-5. I want to be able to review questions, my responses and the grades I got, after the deadline.  
+A web application with Node.js, React, supported initially by a qrelational database (TBD).
 
-## 9. Technical details
-
-A web application with Node.js, React, supported initially by a relational database (TBD).
-
-### Questions
+# Open questions
 
 1. What about mobile?  
 2. 
