@@ -8,7 +8,7 @@
 
 ## 1. Instructor stories
 
-1. I want to ask my students a small number of _warmup questions_ (see [Question[(#question)) before every class period (see [Meeting](#meeting).
+1. I want to ask my students a small number of _warmup questions_ (see [Question](#question)) before every class period (see [Meeting](#meeting).
 2. Answering (see [Answer](#answer)) the questions shouldn't take a student more than 25 minutes.  
 3. I want to be able to quickly review the answers, possibly group them, and select some as discussion triggers (aka hooks, engagement elements, etc.) for class.  
    1. View all answers to a given question in one compact list, differentiate each student's response with different subtle highlight. (**TODO:** Clarify.)    
@@ -59,7 +59,8 @@
       3. Calculus-based. 
       4. Upper-division.  
       5. Graduate-level.  
-   2. In general, these should be configurable by the instructor.  
+   2. This is a first step toward figuring out how to maintain domain knowledge in a hierarchy of academic difficulty.
+   3. In general, these levels should be configurable by the instructor, though concensus and normativity are desired.  
 3. Quesitons can be searched by users based on:
    1. Author.  
    2. Topic.  
@@ -67,6 +68,23 @@
    4. Date.  
    5. Course name.   
    
+### 1.2. Cards
+
+_Notes: Cards are semi-independent embeddable interactive units of rich multimedia content._
+
+1. What is a card good for:
+2. What can be a card:
+   1. Questions, by default. 
+   2. Answers, if interactive may optionally be, especially in the interactive case.
+   3. Curated results in class.
+3. What may a card contain:
+   1. Textual paragraphs.
+   2. Formulae.
+   3. Images.
+   4. Embedded video.
+4. In general, cards should support a full (initially 2D) pallete of formatting options, organized as a set of content-dependent rich editors. _Note that the **bang-for-the-buck** declines sharply for such editors. The range is from **HTML** (or **LaTeX**, or **Photoshop**) to **Markdown**. Err on the side of simplicity._
+
+
 
 ## 2. Student stories
 
@@ -91,13 +109,15 @@
 
 ## 2. Class
 
-_Notes: Class is an instance (sometimes synonymous to "section") of a course, in time and place._
+_Notes: Class is an instance (sometimes synonymous to "section") of a course, in time priod (e.g. semester) and place (school)._
 
-1. (GUID) Course catalog ID.  
-2. (GUID) Offering school ID.  
+**TODO (@ivogeorg):** Makes sense to have Class ID!
+
+1. (GUID, _composite, partially readable_) Course catalog ID.  
+2. (GUID, _composite, partially readable_) Offering school ID.  
 3. (UID per "Offering school ID") Offering department ID.  
 4. (UID per "Course catalog ID") Term ID.  _There are semesters, winterims, maymesters, quarters, and other varieties. May need to be free-form._
-5. (UID per "Offering school ID" and "Offering department ID") Section ID.  
+5. (UID per "Course catalog ID" and "Term ID") Section ID.  
 6. _(optional)_ Catalog description.
 7. _(optional)_ Syllabus.  
 8. _(optional)_ Schedule.  
@@ -115,22 +135,18 @@ _Notes: Class is an instance (sometimes synonymous to "section") of a course, in
 
 ## 4. Meeting
 
-_Notes: Meetings are class periods, where the instructor and the students meet, in person or online._
+_Notes: Meetings are class periods, where the instructor and the students meet, in person or online. For example, twice-per-week course over a 15-week semester has 30 meetings. Questions can be associated with meetings, dynamically. Curated results are associated with a meeting, but meeting is a **not** a schema linking entity._
 
-1. (UID per "Instructor ID", "Course catalog ID", "Term ID", and "Section ID") Meeting ID.
-2. (UID per "Meeting ID") Order index.  
+1. (UID per "Section ID") Meeting ID.
+2. (UID per "Section ID") Order index.  
 3. _(optional)_ Date. _Should be a standard yyyy-mm-dd format throughout._   
 4. (set) Questions.  
-5. Meeting view, which displays:  
-   1. Full question
-   2. Aggregated response pattern, a.k.a. clustering (37% gave this kind of response, 29% gave that kind of response, 20% showed confusion).
-   3. Selected student responses presented anonymously. Responses can be displayed in a certain order.
+5. (set) Digests.  
 
 ## 5. Question
 
-1. (UID per "Instructor ID", "Course catalog ID", "Term ID", and "Section ID") Question ID.  
-2. Question text. _Should multimedia questions (that is, "cards") be supported? This will vastly complicate the design._  
-3. Cards:  
+1. (UID per "Instructor ID", "Course catalog ID", "Term ID", and "Section ID") Question ID.  **TODO (@ivogeorg):** Need to lay out the schema to get this one right!
+2. Card data:  
    1. Mathematical expressions  
    2. HTML links  
    3. Basic rich-text editor (lists, italics, bold, etc.)  
@@ -139,41 +155,67 @@ _Notes: Meetings are class periods, where the instructor and the students meet, 
 
 ## 6. Answer
 
-1. (UID per "Question ID", "Student ID", "Course ID", "Term ID") Answer ID.
-2. Selected for class. _This might require more input from an experienced user._  
-3. Cards:  
+1. (UID per "Question ID", "Student ID", "Course ID", "Term ID", "Section ID") Answer ID.
+3. Cards data:  
    1. Mathematical expressions.
    2. Images.
 4. Responses flagged to be presented in the meeting view. The system tracks and displays how many times a particular student has has their answer flagged for display.
 
+## 7. Digest
+
+_Notes: A digest is a data product, based on the system data and content. For example, this includes curated answer aggregations._
+
+##### Preliminary notes
+
+1. Various combinations of data. Example:
+   1. Question or questions.
+   2. Answers.
+   3. Metadata. Example:
+      1. The answer is selected for anonymous show in class.
+2. Various aggregations.  
+3. Support for different views. For example:
+   1. Meeting view, which displays:  
+      1. Full question
+      2. Aggregated response pattern, a.k.a. clustering (37% gave this kind of response, 29% gave that kind of response, 20% showed confusion).
+      3. Selected student responses presented anonymously. Responses can be displayed in a certain order.
+
+
 # Views
 
+_Notes: Views are 
+
+**UNDER REVIEW**
+
 1. View responses.
+2. Meeting view, which displays:  
+   1. Full question
+   2. Aggregated response pattern, a.k.a. clustering (37% gave this kind of response, 29% gave that kind of response, 20% showed confusion).
+   3. Selected student responses presented anonymously. Responses can be displayed in a certain order.
 
-## Cards
 
-_Notes: Cards are semi-independent embeddable interactive units of rich multimedia content._
+# Workflows
 
-1. What is a card good for:
-2. What can be a card:
-   1. Questions, by default. 
-   2. Answers, if interactive may optionally be, especially in the interactive case.
-   3. Curated results in class.
-3. What may a card contain:
-   1. Textual paragraphs.
-   2. Formulae.
-   3. Images.
-   4. Embedded video.
-4. In general, cards should support a full (initially 2D) pallete of formatting options, organized as a set of content-dependent rich editors. _Note that the **bang-for-the-buck** declines sharply for such editors. The range is from **HTML** (or **LaTeX**, or **Photoshop**) to **Markdown**. Err on the side of simplicity._
+_Notes: Workflows showd translate into detailed UI specs._
+
+1. Pre-meeting warmup questions and instructor review and digest.
+2. Real-time in-class questions with automatic answer digest. 
+
 
 # Implementation notes
 
-A web application with Node.js, React, supported initially by a qrelational database (TBD).
+1. A web application with Node.js, React, supported initially by a database.  **TODO (@ivogeorg):** Stacks website, MEAN stack.  
+2. The data has schema, but should not be as rigid as classic relational schema. Keys where necessary, mappings otherwise. Uniqueness still has to be enforceable.  For example, Digest is associated with Meeting, but need not have a key relationship with it.
+3. Taking the previous point further, UIDs per this and that are hard to maintain, whereas GUID generation is super simple. For example, Google's myriad types of search and ad data is based on trillions of GUIDs. Switch to GUIDs. As a result:
+   1. Uniqueness need not be enforced up-front, but becomes post factum repairable. 
+   2. In general, this is the modus operandi of No-SQL data and databases.  
+3. If questions become cards, and cards are documents, then the database should be document-oriented (e.g. MongoDB).  
+4. 
+
 
 # Open questions
 
 1. What about mobile?  
-2. Can question-answering be in the form of short dialogue? (Looking forward to LA Bot)
+2. Can question-answering be in the form of short dialog? (Looking forward to LA Bot)
 3. Instead of email, may the questions be served over Teams?
 4. How does one embed an app in Canvas? (In general, the logistics might not be worth it, if we can bypass with social media.)
-
+5. The system that is taking shape can easily support real-time question generation, answer digestion, and engagement. Should we make sure the design does not preclude this workflow?
