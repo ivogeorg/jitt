@@ -167,6 +167,8 @@ _Notes: Cards are semi-independent embeddable interactive units of rich multimed
 3. Associations (many-to-one) and mappings (one-to-one) in simple tables.
 4. Optional metadata.
 
+<img src="assets/schema-notes.jpg" width="400" />
+
 ## 1. Instructor
 
 1. (GUID) Instructor ID.  
