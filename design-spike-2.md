@@ -64,7 +64,8 @@ Table of Contents
          | Category 4  |          
          ---------------          
          ```
-      4. Automatic clustering can be presented in the same UX/UI, just populating the cluster dimensions and categories.
+      4. This is just like adding new folders in Outlook (which is overly clunky), O'Reilly's lists, or SparkFun's lists.  
+      5. Automtic clustering can be presented in the same UX/UI, just populating the cluster dimensions and categories.
    3. Sort student responses in a few ways. For example:
       1. By timestamp.
       2. Alphabetical by last name.
@@ -151,6 +152,21 @@ _Notes: Cards are semi-independent embeddable interactive units of rich multimed
 
 # Data
 
+```
+  _______ ____  _____   ____   
+ |__   __/ __ \|  __ \ / __ \  
+    | | | |  | | |  | | |  | | 
+    | | | |  | | |  | | |  | | 
+    | | | |__| | |__| | |__| | 
+    |_|  \____/|_____/ \____/  
+```                               
+
+**TODO ([@ivogeorg](https://github.com/ivogeorg)):** 
+1. GUID for core entities (classes, questions, answers, students, instructors, digests, etc.).
+2. Uniqueness (email addresses - externally enforced, login names, etc.).
+3. Associations (many-to-one) and mappings (one-to-one) in simple tables.
+4. Optional metadata.
+
 ## 1. Instructor
 
 1. (GUID) Instructor ID.  
@@ -224,6 +240,15 @@ _Notes: Meetings are class periods, where the instructor and the students meet, 
 
 _Notes: A digest is a data product, based on the system data and content. For example, this includes curated answer aggregations._
 
+```
+  _______ ____  _____   ____   
+ |__   __/ __ \|  __ \ / __ \  
+    | | | |  | | |  | | |  | | 
+    | | | |  | | |  | | |  | | 
+    | | | |__| | |__| | |__| | 
+    |_|  \____/|_____/ \____/  
+```
+
 ##### Preliminary notes
 
 1. Various combinations of data. Example:
@@ -243,7 +268,14 @@ _Notes: A digest is a data product, based on the system data and content. For ex
 
 _Notes: Views are formatted combinations of information, promptings, and editing elements. A view may contain [cards](#12-cards)._
 
-**UNDER REVIEW**
+```
+  _______ ____  _____   ____   
+ |__   __/ __ \|  __ \ / __ \  
+    | | | |  | | |  | | |  | | 
+    | | | |  | | |  | | |  | | 
+    | | | |__| | |__| | |__| | 
+    |_|  \____/|_____/ \____/  
+```
 
 1. View responses.
 2. Meeting view, which displays:  
@@ -255,6 +287,15 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 # Workflows
 
 _Notes: Workflows should translate into detailed UI specs, e.g. a mesh of views._
+
+```
+  _______ ____  _____   ____   
+ |__   __/ __ \|  __ \ / __ \  
+    | | | |  | | |  | | |  | | 
+    | | | |  | | |  | | |  | | 
+    | | | |__| | |__| | |__| | 
+    |_|  \____/|_____/ \____/  
+```
 
 1. Pre-meeting warmup questions and instructor review and digest.
 2. Real-time in-class questions with automatic answer digest. 
