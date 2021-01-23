@@ -241,7 +241,7 @@ _Notes: A digest is a data product, based on the system data and content. For ex
 
 # Views
 
-_Notes: Views are 
+_Notes: Views are formatted combinations of information, promptings, and editing elements. A view may contain [cards](#12-cards)._
 
 **UNDER REVIEW**
 
@@ -254,7 +254,7 @@ _Notes: Views are
 
 # Workflows
 
-_Notes: Workflows showd translate into detailed UI specs._
+_Notes: Workflows should translate into detailed UI specs, e.g. a mesh of views._
 
 1. Pre-meeting warmup questions and instructor review and digest.
 2. Real-time in-class questions with automatic answer digest. 
