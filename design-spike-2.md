@@ -38,14 +38,38 @@ Table of Contents
 ## 1. Instructor stories
 
 1. I want to ask my students a small number of _warmup questions_ (see [Question](#question)) before every class period (see [Meeting](#meeting).
-2. Answering (see [Answer](#answer)) the questions shouldn't take a student more than 25 minutes. (I think this can be removed)  
 3. I want to be able to quickly review the answers, possibly group them, and select some as discussion triggers (aka hooks, engagement elements, etc.) for class.  
-   1. View all answers to a given question in one compact list, differentiate each student's response with different subtle highlight. See example in files.  
-   2. Sort student responses in a few ways. For example:
+   1. View all answers to a given question in one compact list, differentiate each student's response with different subtle highlight. This can be thought of as _manual clustering_. See the following examples:
+      Slide | Description
+      --- | ---
+      <img src="assets/warmup_slides/Slide1.png" width="300" />  |  Contains a summary of a popular answer and a general "Conceptual problems" cluster/pool
+      <img src="assets/warmup_slides/Slide2.png" width="300" />  |  Contains two anonymized sample answers
+      <img src="assets/warmup_slides/Slide3.png" width="300" />  |  Contains three clusters with brief description
+      <img src="assets/warmup_slides/Slide4.png" width="300" />  |  Contains two anonymized sample (parts of) answers
+      <img src="assets/warmup_slides/Slide5.png" width="300" />  |  For a multiple-choice question, provides percentages for each answer
+   2. _Manual clustering_ may have a very interesting UX/UI, in which, while the instructor is reviewing the answers, they can create clustering on the fly:
+      1. If there is already a cluster category matching the highlight for an answer, it is selected to flag the answer.
+      2. If an answer does not match any of the already available cluster categories, it is created on the fly, the answer is automatically flagged with it, and the category is added to the available one.
+      3. Each set of cluster categories defines one "dimension". Multiple dimensions may be supported easily with the same UX/UI. A visual example:
+         ```
+         ---------------          ---------------          
+         | DIMENSION 1 |          | DIMENSION 2 |          
+         ---------------          ---------------          
+         | Category 1  |          | Category 1  |          
+         ---------------          ---------------          
+         | Category 2  |          | Category 2  |          
+         ---------------          ---------------          
+         | Category 3  |          
+         ---------------          
+         | Category 4  |          
+         ---------------          
+         ```
+      4. Automatic clustering can be presented in the same UX/UI, just populating the cluster dimensions and categories.
+   3. Sort student responses in a few ways. For example:
       1. By timestamp.
       2. Alphabetical by last name.
       3. Randomized. 
-4. I want to be able to load up questions for the class periods for a whole semester, and have the flexibility to adjust to the way the specific class is moving through the material. Easily move a question from one WarmUp to another, change the order of WarmUps.  
+4. I want to be able to load up questions for the class periods for a whole semester, and have the flexibility to adjust to the way the specific class is moving through the material. Easily move a question from one WarmUp to another, change the order of WarmUps. Here, "WarmUp" is funcitonally synonymous to class period or "Meeting" (see [Meeting](#meeting)).  
 5. I want to be able to import questions:
    1. From csv, spreadsheet, etc. and then arrange them.  
    2. From a previous edition of the same class.  
@@ -53,10 +77,10 @@ Table of Contents
 7. I want to be able to edit the text of a question, both while it is unassigned (that is, in a [question bank](#11-question-banks)) and assigned (so the unassigned and assigned can differ).  
 8. I want the option to have the computer assign grades automatically (auto-grade) to student responses.  
    1. Select mode:
-      1. Auto-grade for participation. (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** Provide a sample rubric.)
-      2. Auto-grade for correctness. (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** How?)  (@ivogeorg The system should allow for multiple-choice (single or many) questions.)
+      1. Auto-grade for participation. For example, on a 0-2 scale, default to 1 for having provided an answer and 0 for no answer. 
+      2. Auto-grade for correctness, for questions which have correct answers (e.g. multiple-choice, single-answer or multiple-answer, questions).
       3. No auto-grade (meaning, manual grading only). 
-   2. Customize point value per question. Meaning, a question might be worth 1, 2 or 4 points, etc. 
+   2. Customize point value per question. That is, the scale is definable.   
    3. Manually adjust the grade for a student response at the same time (same view) as reviewing responses. Simple +/- buttons to increase/decrease grades.  
 9. Email individual students (from my default email client) about their response with one click from the basic "view responses" view.  
    1. Emails are based on templates.
@@ -67,15 +91,17 @@ Table of Contents
       4. The addressee student's answer.
       5. Instructor signature.
    3. This feature may be scaled with clustering (a la [sense education](https://www.sense.education/):
-      1. Aggregation per question.  
+      1. Grouping answers per question.  
       2. Clustering of a question's answers.
       3. Collecting instructor feedback on each cluster.
-      4. Assembling instructor feedback for all questions for each student.
-      5. Mailing each student.
+      4. Assembling instructor feedback for for each student (for all answered question).
+      5. Mailing feedgack to each student.
 10. During class meeting, I want to show some curated information from the warmups:  
-    1. Question text and images (remind students, or for students who didn't do it) (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** Reduce conflated features.)
-    2. Aggregate responses categorized by the instructor when reading a sample of student responses. (see slide examples) (**TODO ([@JeffLoats](https://github.com/JeffLoats)):** Where were they sent?)
-    3. Anonymous responses from some students, especially the "useful wrong answers."  
+    1. Question text and images. These suppot are points of engagement. For example:
+       1. Remind students what the question was about.   
+       2. Show how many students didn't do it.  
+    2. Aggregate responses categorized by the instructor when reading a sample of student responses. (see slide examples above)
+    3. Anonymous responses from some students, especially the "useful wrong answers".  
 11. Ideally the student view of questions is LMS embeddable.  
 
 ### 1.1. Question banks
@@ -164,7 +190,7 @@ _Notes: Class is an instance (sometimes synonymous to "section") of a course, in
 
 ## 4. Meeting
 
-_Notes: Meetings are class periods, where the instructor and the students meet, in person or online. For example, twice-per-week course over a 15-week semester has 30 meetings. Questions can be associated with meetings, dynamically. Curated results are associated with a meeting, but meeting is a **not** a schema linking entity._
+_Notes: Meetings are class periods, where the instructor and the students meet, in person or online. For example, twice-per-week course over a 15-week semester has 30 meetings. Questions can be associated with meetings, dynamically. Curated results are associated with a meeting, but meeting is a **not** a schema linking entity. "Meeting" may be functionally synonymous to "WarmUp", when the latter means a set of warmup questions for a meeting._
 
 1. (UID per "Section ID") Meeting ID.
 2. (UID per "Section ID") Order index.  
@@ -173,6 +199,8 @@ _Notes: Meetings are class periods, where the instructor and the students meet, 
 5. (set) Digests.  
 
 ## 5. Question
+
+**TODO ([@ivogeorg](https://github.com/ivogeorg)):** Question types (e.g. narrative, interactive card, multiple-choice, etc.)!
 
 1. (UID per "Instructor ID", "Course catalog ID", "Term ID", and "Section ID") Question ID.  **TODO ([@ivogeorg](https://github.com/ivogeorg)):** Need to lay out the schema to get this one right!
 2. Card data:  
@@ -183,6 +211,8 @@ _Notes: Meetings are class periods, where the instructor and the students meet, 
 2. (set) Answers.  
 
 ## 6. Answer
+
+**TODO ([@ivogeorg](https://github.com/ivogeorg)):** Answer value scales and grades!
 
 1. (UID per "Question ID", "Student ID", "Course ID", "Term ID", "Section ID") Answer ID.
 3. Cards data:  
@@ -207,7 +237,7 @@ _Notes: A digest is a data product, based on the system data and content. For ex
       1. Full question
       2. Aggregated response pattern, a.k.a. clustering (37% gave this kind of response, 29% gave that kind of response, 20% showed confusion).
       3. Selected student responses presented anonymously. Responses can be displayed in a certain order.
-
+4. Manual clustering (per the instructor story) is also a Digest. So, the dimensions and categories will be held here.
 
 # Views
 
@@ -234,11 +264,14 @@ _Notes: Workflows showd translate into detailed UI specs._
 
 1. A web application with Node.js, React, supported initially by a database.  **TODO ([@ivogeorg](https://github.com/ivogeorg)):** Stacks website, MEAN stack.  
 2. The data has schema, but should not be as rigid as classic relational schema. Keys where necessary, mappings otherwise. Uniqueness still has to be enforceable.  For example, Digest is associated with Meeting, but need not have a key relationship with it.
-3. Taking the previous point further, UIDs per this and that are hard to maintain, whereas GUID generation is super simple. For example, Google's myriad types of search and ad data is based on trillions of GUIDs. Switch to GUIDs. As a result:
-   1. Uniqueness need not be enforced up-front, but becomes post factum repairable. 
-   2. In general, this is the modus operandi of No-SQL data and databases.  
-3. If questions become cards, and cards are documents, then the database should be document-oriented (e.g. MongoDB).  
-4. 
+3. Taking the previous point further, UIDs per this and that are hard to maintain, whereas GUID generation is super simple. For example, Google's myriad types of search and ad data are based on trillions of GUIDs. Switch to GUIDs. As a result:
+   1. Uniqueness need not be enforced up-front, but becomes post factum repairable.
+   2. In general, this is the modus operandi of non-relational databases. **TODO ([@ivogeorg](https://github.com/ivogeorg)):** What falls under "No-SQL"?  
+4. All entities should have GUIDs. (And, looking forward to STEMGraph, so should concepts)
+   1. Tables should still hold the relations and maps.
+   2. JSON can be used as fundamental storage format.
+5. If questions become cards, and cards are documents, then the database can be document-oriented (e.g. MongoDB). Storage in JSON!
+6. 
 
 
 # Open questions
