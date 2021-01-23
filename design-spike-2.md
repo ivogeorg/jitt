@@ -39,7 +39,7 @@ Table of Contents
 
 1. I want to ask my students a small number of _warmup questions_ (see [Question](#question)) before every class period (see [Meeting](#meeting)).
 3. I want to be able to quickly review the answers (see [Answers](#answers)), possibly group them, and select some as discussion triggers (aka hooks, engagement elements, etc.) for class.  
-   1. View all answers to a given question in one compact list, differentiate each student's response with different subtle highlight. This can be thought of as _manual clustering_. See the following examples:
+   1. View all answers to a given question in one compact list, with simple row highlighting to make it easy to tell between adjaced student answers. ~~This can be thought of as _manual clustering_.~~  See the following examples: 
       Slide | Description
       --- | ---
       <img src="assets/warmup_slides/Slide1.png" width="300" />  |  Contains a summary of a popular answer and a general "Conceptual problems" cluster/pool
@@ -64,13 +64,14 @@ Table of Contents
          | Category 4  |          
          ---------------          
          ```
-      4. This is just like adding new folders in Outlook (which is overly clunky), O'Reilly's lists, or SparkFun's lists.  
+      4. This is just like adding new folders in Outlook (which is overly clunky), O'Reilly's lists, or SparkFun's lists.  *[Applying labels in Gmail might be a good example. It is very fast, and has a lot of the features you describe.]*
       5. Automtic clustering can be presented in the same UX/UI, just populating the cluster dimensions and categories.
    3. Sort student responses in a few ways. For example:
       1. By timestamp.
       2. Alphabetical by last name.
       3. Randomized. 
-4. I want to be able to load up questions for the class periods for a whole semester, and have the flexibility to adjust to the way the specific class is moving through the material. Easily move a question from one WarmUp to another, change the order of WarmUps. Here, "WarmUp" is funcitonally synonymous to class period or "Meeting" (see [Meeting](#meeting)).  
+      4. Instructor requests "Random 15 responses at the top, from those I have seen the least." The system tallies which students are displayed at the top. The next time, those with the lowest tally are shown at the topc.
+4. I want to be able to load up questions for the class periods for a whole semester, and have the flexibility to adjust to the way the specific class is moving through the material. Easily move a question from one WarmUp to another, change the order of WarmUps. Here, "WarmUp" is funcitonally synonymous to class period or "Meeting" (see [Meeting](#meeting)). [WarmUP should be distinct from "Meeting" some isntructors give one WarmUp each week, covering 2 class meetings, for example.]  
 5. I want to be able to import questions:
    1. From csv, spreadsheet, etc. and then arrange them.  
    2. From a previous edition of the same class.  
