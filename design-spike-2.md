@@ -37,8 +37,8 @@ Table of Contents
 
 ## 1. Instructor stories
 
-1. I want to ask my students a small number of _warmup questions_ (see [Question](#question)) before every class period (see [Meeting](#meeting).
-3. I want to be able to quickly review the answers, possibly group them, and select some as discussion triggers (aka hooks, engagement elements, etc.) for class.  
+1. I want to ask my students a small number of _warmup questions_ (see [Question](#question)) before every class period (see [Meeting](#meeting)).
+3. I want to be able to quickly review the answers (see [Answers](#answers)), possibly group them, and select some as discussion triggers (aka hooks, engagement elements, etc.) for class.  
    1. View all answers to a given question in one compact list, differentiate each student's response with different subtle highlight. This can be thought of as _manual clustering_. See the following examples:
       Slide | Description
       --- | ---
