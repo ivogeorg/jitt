@@ -12,28 +12,6 @@
                |_|              |___/                   
 ```
                                                                        
-Table of Contents
-=================
-
-* [Design spike 2 for <a href="https://github\.com/ivogeorg/jitt">jiit</a>](#design-spike-2-for-jiit)
-* [User stories](#user-stories)
-  * [1\. Instructor stories](#1-instructor-stories)
-    * [1\.1\. Question banks](#11-question-banks)
-    * [1\.2\. Cards](#12-cards)
-  * [2\. Student stories](#2-student-stories)
-* [Data](#data)
-  * [1\. Instructor](#1-instructor)
-  * [2\. Class](#2-class)
-  * [3\. Student](#3-student)
-  * [4\. Meeting](#4-meeting)
-  * [5\. Question](#5-question)
-  * [6\. Answer](#6-answer)
-  * [7\. Digest](#7-digest)
-        * [Preliminary notes](#preliminary-notes)
-* [Views](#views)
-* [Workflows](#workflows)
-* [Implementation notes](#implementation-notes)
-* [Open questions](#open-questions)
 
 
 # User stories
