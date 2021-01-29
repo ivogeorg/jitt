@@ -33,6 +33,27 @@ Table of Contents
 1. I want to ask my students a small number of _questions_ (see [Question](#question)).  
    1. WarmUp is before class (optional deadline, etc.).  
    2. Lightning is live questions.  
+2. What are questions?
+   1. Questions have _optional_ meta-data.  
+   2. A course label is meta-data of top priority. Course labels will appear on top of all questions as immediate filters.  
+   3. Questions can be different type. Core kinds are:
+      1. Essay.  
+      2. Multiple-choice.  
+      3. Multiple-answer.  
+   4. Questions appear as richly-formatted markup [cards](#cards).   
+   5. Expected clustering is meta-data.  
+   6. Questions have versions, that can be shown together.  **TODO:** What are "versions", especially regarding whether two questions are versions or separate quesions?  
+      1. Questions have "history".  
+3. Interaction with questions:
+   1. Before the semester. (Assemble a bank of questions for the course.)  
+      1. No particular order (e.g. syllabus is in flux).  
+      2. Not homogenous (e.g. I am teaching two different levels).  
+   2. During the semester. (The course trajectory changed in this class.)   
+      1. Syllabus got rearranged (e.g. drilled down into a topic too early and that requires the next topics to appear in a slightly different order).  
+      2. Change the wording.  
+      3. Delete a question.  
+      4. Move a questions backward or forward.  
+      5. Change the expected clustering.  
 2. For WarmUp, I want to be able to quickly review the answers (see [Answers](#answers)) for a question, and:
    1. The view can be in two modes, squished and expanded. In squished, I can see as many answers as possible. In expanded, I can interact with the answers.  
    2. Interactions are:
