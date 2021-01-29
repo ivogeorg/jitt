@@ -33,8 +33,16 @@ Table of Contents
 1. I want to ask my students a small number of _questions_ (see [Question](#question)).  
    1. WarmUp is before class (optional deadline, etc.).  
    2. Lightning is live questions.  
-3. I want to be able to quickly review the answers (see [Answers](#answers)), possibly group them, and select some as discussion triggers (aka hooks, engagement elements, etc.) for class.  
-   1. View all answers to a given question in one compact list, with simple row highlighting to make it easy to tell between adjaced student answers. ~~This can be thought of as _manual clustering_.~~  See the following examples: 
+2. For WarmUp, I want to be able to quickly review the answers (see [Answers](#answers)) for a question, and:
+   1. The view can be in two modes, squished and expanded. In squished, I can see as many answers as possible. In expanded, I can interact with the answers.  
+   2. Interactions are:
+      1. Adjust the default grade.  
+      2. Send private feedback to a student off a template. 
+      3. _Optionally, enter feedback for each answer cluster for each question and have the system broadcast stitched up responses to each student._  
+      4. Manual clustering with on-the-fly category creation.  
+      5. Flag for inclusion in a [digest](#digest). 
+3. Digest.
+   1. Examples:      
       Slide | Description
       --- | ---
       <img src="assets/warmup_slides/Slide1.png" width="300" />  |  Contains a summary of a popular answer and a general "Conceptual problems" cluster/pool
