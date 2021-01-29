@@ -12,7 +12,19 @@
                |_|              |___/                   
 ```
                                                                        
+Table of Contents
+=================
 
+* [Design spike 3 for <a href="https://github\.com/ivogeorg/jitt">jitt</a>](#design-spike-3-for-jitt)
+* [User stories](#user-stories)
+  * [1\. Instructor stories](#1-instructor-stories)
+    * [1\.1\. Question banks](#11-question-banks)
+    * [1\.2\. Cards](#12-cards)
+  * [2\. Student stories](#2-student-stories)
+* [Design spike protocol](#design-spike-protocol)
+* [Views](#views)
+* [Workflows](#workflows)
+* [Data](#data)
 
 # User stories
 
