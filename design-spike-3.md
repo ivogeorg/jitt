@@ -44,6 +44,7 @@ Table of Contents
    5. Expected clustering is meta-data.  
    6. Questions have versions, that can be shown together.  **TODO:** What are "versions", especially regarding whether two questions are versions or separate quesions?  
       1. Questions have "history".  
+      2. (ivogeorg-2020-02-03) I think this matter is actually of great importance. Looking forward to a concept-graph representations of human concepts, the structure of the graph might be used to compose questions of various types and difficulty. So, even thought his might be an advanced feature further down the road (that is, not for MVP), the design of the system should anticipate it.
 3. Interaction with questions:
    1. Before the semester. (Assemble a bank of questions for the course.)  
       1. No particular order (e.g. syllabus is in flux).  
