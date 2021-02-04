@@ -12,6 +12,23 @@
                |_|              |___/                   
 ```
                                                                        
+Table of Contents
+=================
+
+* [Design spike 3 for <a href="https://github\.com/ivogeorg/jitt">jitt</a>](#design-spike-3-for-jitt)
+* [User stories](#user-stories)
+  * [1\. Instructor stories](#1-instructor-stories)
+    * [1\.1\. Question banks](#11-question-banks)
+    * [1\.2\. Questions between banks and courses](#12-questions-between-banks-and-courses)
+      * [1\.2\.1\. Two divergent ways to design this:](#121-two-divergent-ways-to-design-this)
+        * [1\.2\.1\.1\. Copies](#1211-copies)
+        * [1\.2\.1\.2\. Metadata](#1212-metadata)
+    * [1\.3\. Cards](#13-cards)
+  * [2\. Student stories](#2-student-stories)
+* [Design spike protocol](#design-spike-protocol)
+* [Views](#views)
+* [Workflows](#workflows)
+* [Data](#data)
 
 # User stories
 
@@ -143,6 +160,12 @@
    3. Question level.  
    4. Date.  
    5. Course name.   
+4. Querstion banks are closely related to other forms of knowledge organization.  
+   1. Concept graphs.  
+   2. Concept inventories.  
+   3. Curricula recommendations (e.g. [ce2016](http://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf)).  
+   4. Conceptual change models.  
+   
    
 ### 1.2. Questions between banks and courses
 
