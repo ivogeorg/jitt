@@ -96,10 +96,11 @@ Table of Contents
       2. Alphabetical by last name.
       3. Randomized. 
       4. Instructor requests "Random 15 responses at the top, from those I have seen the least." The system tallies which students are displayed at the top. The next time, those with the lowest tally are shown at the topc.
-4. I want to be able to load up questions for the class periods for a whole semester, and have the flexibility to adjust to the way the specific class is moving through the material. Easily move a question from one WarmUp to another, change the order of WarmUps. Here, "WarmUp" is funcitonally synonymous to class period or "Meeting" (see [Meeting](#meeting)). [WarmUP should be distinct from "Meeting" some isntructors give one WarmUp each week, covering 2 class meetings, for example.]  
+4. I want to be able to load up questions for the class periods for a whole semester, and have the flexibility to adjust to the way the specific class is moving through the material. Easily move a question from one WarmUp to another, change the order of WarmUps. Here, "WarmUp" is funcitonally synonymous to class period or "Meeting" (see [Meeting](#meeting)). [WarmUP should be distinct from "Meeting" some isntructors give one WarmUp each week, covering 2 class meetings, for example.]  **I think this is addressed earlier. Remove?**
 5. I want to be able to import questions:
    1. From csv, spreadsheet, etc. and then arrange them.  
    2. From a previous edition of the same class.  
+   3. From another instructor that uses the system.
 6. I want to be able to export questions to csv or spreadsheet.  
 7. I want to be able to edit the text of a question, both while it is unassigned (that is, in a [question bank](#11-question-banks)) and assigned (so the unassigned and assigned can differ).  
 8. I want the option to have the computer assign grades automatically (auto-grade) to student responses.  
@@ -108,7 +109,7 @@ Table of Contents
       2. Auto-grade for correctness, for questions which have correct answers (e.g. multiple-choice, single-answer or multiple-answer, questions).
       3. No auto-grade (meaning, manual grading only). 
    2. Customize point value per question. That is, the scale is definable.   
-   3. Manually adjust the grade for a student response at the same time (same view) as reviewing responses. Simple +/- buttons to increase/decrease grades.  
+   3. Manually adjust the grade for a student response at the same time (same view) as reviewing responses. Simple +/- buttons to increase/decrease grades.  **Addressed earlier? Remove?**
 9. Email individual students (from my default email client) about their response with one click from the basic "view responses" view.  
    1. Emails are based on templates.
    2. A template should be prifilled with available slot data. For example:
@@ -123,13 +124,13 @@ Table of Contents
       3. Collecting instructor feedback on each cluster.
       4. Assembling instructor feedback for for each student (for all answered question).
       5. Mailing feedgack to each student.
-10. During class meeting, I want to show some curated information from the warmups:  
+10. During class meeting, I want to show some curated information from the warmups:  **This is Digest. Discussed earlier. Remove?**
     1. Question text and images. These suppot are points of engagement. For example:
        1. Remind students what the question was about.   
        2. Show how many students didn't do it.  
     2. Aggregate responses categorized by the instructor when reading a sample of student responses. (see slide examples above)
     3. Anonymous responses from some students, especially the "useful wrong answers".  
-11. Ideally the student view of questions is LMS embeddable.  
+11. Ideally the student view of questions is LMS embeddable. If the system could connect to the LMS via an LTI so that there is no additional login required, that would be even better.  
 
 ### 1.1. Question banks
 
