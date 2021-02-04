@@ -2,14 +2,14 @@
 
 [[taag](https://patorjk.com/software/taag/#p=display&f=Big&t=something)]
 ```
-  _____                                                 
- |_   _|                                                
-   | |  _ __    _ __  _ __ ___   __ _ _ __ ___  ___ ___ 
-   | | | '_ \  | '_ \| '__/ _ \ / _` | '__/ _ \/ __/ __|
-  _| |_| | | | | |_) | | | (_) | (_| | | |  __/\__ \__ \
- |_____|_| |_| | .__/|_|  \___/ \__, |_|  \___||___/___/
-               | |               __/ |                  
-               |_|              |___/                   
+   _____                                    _          _ 
+  / ____|                                  | |        | |
+ | (___  _   _ _ __   ___ _ __ ___  ___  __| | ___  __| |
+  \___ \| | | | '_ \ / _ \ '__/ __|/ _ \/ _` |/ _ \/ _` |
+  ____) | |_| | |_) |  __/ |  \__ \  __/ (_| |  __/ (_| |
+ |_____/ \__,_| .__/ \___|_|  |___/\___|\__,_|\___|\__,_|
+              | |                                        
+              |_|                                        
 ```
                                                                        
 Table of Contents
@@ -50,20 +50,22 @@ Table of Contents
       1. Questions have "history".  
       2. (ivogeorg-2020-02-03) I think this matter is actually of great importance. Looking forward to a concept-graph representations of human concepts, the structure of the graph might be used to compose questions of various types and difficulty. So, even thought his might be an advanced feature further down the road (that is, not for MVP), the design of the system should anticipate it.
    7. Questions and their versions live like topic-centered clusters in questions banks. 
-   8. Implementation [zoom-in](12-uestions-between-banks-and-courses):
-      1. Course questions are partial snapshots of the question bank. (They are stored independently. Any reintegration will be designed in the full bank-course interation, **post-MVP**. Meanwhile, **a note to the instructor** that this is a "local copy" of the questions will be displayed if they initiate edits on the course question.)  
+   8. Implementation [zoom-in](12-questions-between-banks-and-courses):
+      1. ~Course questions are partial snapshots of the question bank. (They are stored independently. Any reintegration will be designed in the full bank-course interation, **post-MVP**. Meanwhile, **a note to the instructor** that this is a "local copy" of the questions will be displayed if they initiate edits on the course question.)~    
       2. Course questions accumulate a lot of meta-data and versions as they are used in courses, but remain at large, possibly clustered, in the question bank.
 3. Interaction with questions:
    1. Before the semester. (Assemble a bank of questions for the course.)  
       1. No particular order (e.g. syllabus is in flux).  
       2. Not homogenous (e.g. I am teaching two different levels).  
-   2. Before the semester. (Bank available.)
-      1. Questions for the course are selected into a _local snapshot of the originating question bank_.  
+   2. Before the semester. (Bank available ==> Assignment building)
+      1. Questions for a course from the bank by entering from course creation workflow with **breadcrumbs**, providing automatic course-usage metadata association.    
+      2. New question creation should be integrate in the same view. 
+         1. How do we associate a new question with question-bank questions?   
    3. During the semester. (The course trajectory changed in this class.)   
       1. Syllabus got rearranged (e.g. drilled down into a topic too early and that requires the next topics to appear in a slightly different order).  
       2. Change the wording.  
       3. Delete a question.  
-      4. Move a questions backward or forward.  
+      4. Move a questions backward or forward in the order, also in and out of the question bank.  
       5. Change the expected clustering.  
 2. For WarmUp, I want to be able to quickly review the answers (see [Answers](#answers)) for a question, and:
    1. The view can be in two modes, squished and expanded. In squished, I can see as many answers as possible. In expanded, I can interact with the answers.  
@@ -99,20 +101,21 @@ Table of Contents
          | Category 4  |          
          ---------------          
          ```
-      4. This is just like adding new folders in Outlook (which is overly clunky), O'Reilly's lists, or SparkFun's lists.  *[Applying labels in Gmail might be a good example. It is very fast, and has a lot of the features you describe.]*
-      5. Automtic clustering can be presented in the same UX/UI, just populating the cluster dimensions and categories.
+      4. This is just like adding new folders in Gmail and hierarchical drill-down filtering as in this digital-library screenshot:  
+         <img src="/assets/digital-library-screenshot-for-fitt-layout.png" width="400" />  
+      5. Automatic clustering can be presented in the same UX/UI, just populating the cluster dimensions and categories.  
    3. Sort student responses in a few ways. For example:
       1. By timestamp.
       2. Alphabetical by last name.
       3. Randomized. 
-      4. Instructor requests "Random 15 responses at the top, from those I have seen the least." The system tallies which students are displayed at the top. The next time, those with the lowest tally are shown at the topc.
-4. I want to be able to load up questions for the class periods for a whole semester, and have the flexibility to adjust to the way the specific class is moving through the material. Easily move a question from one WarmUp to another, change the order of WarmUps. Here, "WarmUp" is funcitonally synonymous to class period or "Meeting" (see [Meeting](#meeting)). [WarmUP should be distinct from "Meeting" some isntructors give one WarmUp each week, covering 2 class meetings, for example.]  **I think this is addressed earlier. Remove?**
+      4. Instructor requests "Random 15 responses at the top, from those I have seen the least." The system tallies which students are displayed at the top. The next time, those with the lowest tally are shown at the topic.
+4. ~I want to be able to load up questions for the class periods for a whole semester, and have the flexibility to adjust to the way the specific class is moving through the material. Easily move a question from one WarmUp to another, change the order of WarmUps. Here, "WarmUp" is funcitonally synonymous to class period or "Meeting" (see [Meeting](#meeting)). [WarmUP should be distinct from "Meeting" some isntructors give one WarmUp each week, covering 2 class meetings, for example.]  **I think this is addressed earlier. Remove?**~
 5. I want to be able to import questions:
-   1. From csv, spreadsheet, etc. and then arrange them.  
-   2. From a previous edition of the same class.  
-   3. From another instructor that uses the system.
+   1. From csv, spreadsheet, etc. and then arrange them.  ==> Bank building.    
+   2. ~From a previous edition of the same class.~  
+   3. From another instructor that uses the system. ==> Bank building.  
 6. I want to be able to export questions to csv or spreadsheet.  
-7. I want to be able to edit the text of a question, both while it is unassigned (that is, in a [question bank](#11-question-banks)) and assigned (so the unassigned and assigned can differ).  
+7. ~I want to be able to edit the text of a question, both while it is unassigned (that is, in a [question bank](#11-question-banks)) and assigned (so the unassigned and assigned can differ).~  
 8. I want the option to have the computer assign grades automatically (auto-grade) to student responses.  
    1. Select mode:
       1. Auto-grade for participation. For example, on a 0-2 scale, default to 1 for having provided an answer and 0 for no answer. 
@@ -122,7 +125,7 @@ Table of Contents
    3. Manually adjust the grade for a student response at the same time (same view) as reviewing responses. Simple +/- buttons to increase/decrease grades.  **Addressed earlier? Remove?**
 9. Email individual students (from my default email client) about their response with one click from the basic "view responses" view.  
    1. Emails are based on templates.
-   2. A template should be prifilled with available slot data. For example:
+   2. A template should be prefilled with available slot data. For example:
       1. Subject line.
       2. Greeting.
       3. The question.
@@ -134,13 +137,14 @@ Table of Contents
       3. Collecting instructor feedback on each cluster.
       4. Assembling instructor feedback for for each student (for all answered question).
       5. Mailing feedgack to each student.
-10. During class meeting, I want to show some curated information from the warmups:  **This is Digest. Discussed earlier. Remove?**
+10. ~During class meeting, I want to show some curated information from the warmups:  **This is Digest. Discussed earlier. Remove?**~
     1. Question text and images. These suppot are points of engagement. For example:
        1. Remind students what the question was about.   
        2. Show how many students didn't do it.  
     2. Aggregate responses categorized by the instructor when reading a sample of student responses. (see slide examples above)
     3. Anonymous responses from some students, especially the "useful wrong answers".  
-11. Ideally the student view of questions is LMS embeddable. If the system could connect to the LMS via an LTI so that there is no additional login required, that would be even better.  
+11. Ideally the student view of questions is LMS embeddable (like Canvas rich-editor **Embed**).  
+12. System connects to the LMS via an [LTI](https://community.canvaslms.com/t5/Canvas-Basics-Guide/What-are-External-Apps-LTI-Tools/ta-p/57#:~:text=LTI%20provides%20a%20framework%20through,authenticity%20of%20the%20data%20sent.) so that there is no additional login required, that would be even better.  
 
 ### 1.1. Question banks
 
@@ -176,7 +180,16 @@ Table of Contents
 
 ##### 1.2.1.1. Copies
 
-TBD
+```
+  _____                                _           _ 
+ |  __ \                              | |         | |
+ | |  | | ___ _ __  _ __ ___  ___ __ _| |_ ___  __| |
+ | |  | |/ _ \ '_ \| '__/ _ \/ __/ _` | __/ _ \/ _` |
+ | |__| |  __/ |_) | | |  __/ (_| (_| | ||  __/ (_| |
+ |_____/ \___| .__/|_|  \___|\___\__,_|\__\___|\__,_|
+             | |                                     
+             |_|                                     
+```
 
 ##### 1.2.1.2. Metadata
 
@@ -217,7 +230,7 @@ Questions:
    
 ### 1.3. Cards
 
-_Notes: Cards are semi-independent embeddable interactive units of rich multimedia content._
+_Notes: Cards are semi-independent embeddable interactive units of rich multimedia content stored in JSON and MongoDB._
 
 1. What is a card good for:
 2. What can be a card:
@@ -243,7 +256,7 @@ _Notes: Cards are semi-independent embeddable interactive units of rich multimed
 
 # Design spike protocol
 
-1. Review [stories](#user-stories).  
+1. ~Review [stories](#user-stories).~  
 2. Answer [open questions](https://github.com/ivogeorg/jitt/blob/main/design-spike-2.md#open-questions).  
 3. Integrate notes on [digests](https://github.com/ivogeorg/jitt/blob/main/design-spike-2.md#7-digest).  
 4. Update [stories](#user-stories).  
