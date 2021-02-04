@@ -51,7 +51,8 @@ Table of Contents
       2. Not homogenous (e.g. I am teaching two different levels).  
    2. During the semester. (The course trajectory changed in this class.)   
       1. Syllabus got rearranged (e.g. drilled down into a topic too early and that requires the next topics to appear in a slightly different order).  
-      2. Change the wording.  
+      2. Change the wording. 
+      2. Duplicate a question.
       3. Delete a question.  
       4. Move a questions backward or forward.  
       5. Change the expected clustering.  
