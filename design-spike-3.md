@@ -45,14 +45,19 @@ Table of Contents
    6. Questions have versions, that can be shown together.  **TODO:** What are "versions", especially regarding whether two questions are versions or separate quesions?  
       1. Questions have "history".  
       2. (ivogeorg-2020-02-03) I think this matter is actually of great importance. Looking forward to a concept-graph representations of human concepts, the structure of the graph might be used to compose questions of various types and difficulty. So, even thought his might be an advanced feature further down the road (that is, not for MVP), the design of the system should anticipate it.
+   7. Questions and their versions live like topic-centered clusters in questions banks. 
+   8. Implementation [zoom-in](12-uestions-between-banks-and-courses):
+      1. Course questions are partial snapshots of the question bank. (They are stored independently. Any reintegration will be designed in the full bank-course interation, **post-MVP**. Meanwhile, **a note to the instructor** that this is a "local copy" of the questions will be displayed if they initiate edits on the course question.)  
+      2. Course questions accumulate a lot of meta-data and versions as they are used in courses, but remain at large, possibly clustered, in the question bank.
 3. Interaction with questions:
    1. Before the semester. (Assemble a bank of questions for the course.)  
       1. No particular order (e.g. syllabus is in flux).  
       2. Not homogenous (e.g. I am teaching two different levels).  
-   2. During the semester. (The course trajectory changed in this class.)   
+   2. Before the semester. (Bank available.)
+      1. Questions for the course are selected into a _local snapshot of the originating question bank_.  
+   3. During the semester. (The course trajectory changed in this class.)   
       1. Syllabus got rearranged (e.g. drilled down into a topic too early and that requires the next topics to appear in a slightly different order).  
-      2. Change the wording. 
-      2. Duplicate a question.
+      2. Change the wording.  
       3. Delete a question.  
       4. Move a questions backward or forward.  
       5. Change the expected clustering.  
@@ -152,7 +157,46 @@ Table of Contents
    4. Date.  
    5. Course name.   
    
-### 1.2. Cards
+### 1.2. Questions between banks and courses
+
+#### 1.2.1. Two divergent ways to design this:
+
+1. (copies) Course questions are partial snapshots of the question bank. (They are stored independently. Any reintegration will be designed in the full bank-course interation, **post-MVP**. Meanwhile, **a note to the instructor** that this is a "local copy" of the questions will be displayed if they initiate edits on the course question.)  
+2. (metadata) Course questions accumulate a lot of meta-data and versions as they are used in courses, but remain at large, possibly clustered, in the question bank.
+
+##### 1.2.1.1. Copies
+
+TBD
+
+##### 1.2.1.2. Metadata
+
+Metadata is "tags", "labels", ...
+
+Question bank has (possibly loose) metadata categories:
+- Knowledge graph (e.g. hierarchy of concepts, clustering of question versions)  
+- Course assignment  (e.g. this course, that course)  
+- Presentation (e.g. question type, card elements (e.g. images, diagrams, drawings, etc.))   
+
+
+
+Question bank 
+Topic cluster
+                 Question version
+                                  ==> Course 1000 
+                                                  ==> Semester
+                                                               ==> Assignment (e.g. WarmUp, Lightnihg)
+                                  ==> Course 2000 
+                                                  ==> Semester
+                                                               ==> Assignment (e.g. WarmUp, Lightnihg)
+                                  ==> Meta-data (association, type, level, card elements, ...)
+                 
+      
+                 
+Two questions:
+1. How does the instructor tag.  (Potentially a lot of work.)    
+2. What does the instructor see at the top (i.e. question bank) level.  (Potentially bewildering.)  
+   
+### 1.3. Cards
 
 _Notes: Cards are semi-independent embeddable interactive units of rich multimedia content._
 
