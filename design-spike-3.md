@@ -180,31 +180,40 @@ TBD
 
 ##### 1.2.1.2. Metadata
 
-Metadata is "tags", "labels", ...
+Metadata is "tags", "labels", "GUIDs", ...
 
-Question bank has (possibly loose) metadata categories:
-- Knowledge graph (e.g. hierarchy of concepts, clustering of question versions)  
-- Course assignment  (e.g. this course, that course)  
-- Presentation (e.g. question type, card elements (e.g. images, diagrams, drawings, etc.))   
-
-
-
-Question bank 
-Topic cluster
-                 Question version
-                                  ==> Course 1000 
-                                                  ==> Semester
-                                                               ==> Assignment (e.g. WarmUp, Lightnihg)
-                                  ==> Course 2000 
-                                                  ==> Semester
-                                                               ==> Assignment (e.g. WarmUp, Lightnihg)
-                                  ==> Meta-data (association, type, level, card elements, ...)
+Question bank has (possibly loosely overlapping) metadata categories:
+1. Knowledge graph (e.g. hierarchy of concepts, clustering of question versions, question sets that are asked together)  
+   1. Folks: Concepts, Conceptual association, ...
+2. Course usage (e.g. course level, course-semester-assignment, class-n-answers)  
+   1. Folks: Course associations, ...
+3. Presentation (e.g. question type, card elements (e.g. images, diagrams, drawings, etc.))   
+   1. Folks: Design, ...
+4. Provenance (e.g. author, etc.)  
+   1. Folks: Origins, History, ...  
+5. Usage stats (e.g. how many times, digests)  
+   1. Folks: History, Answer stats, ...
                  
-      
-                 
-Two questions:
-1. How does the instructor tag.  (Potentially a lot of work.)    
-2. What does the instructor see at the top (i.e. question bank) level.  (Potentially bewildering.)  
+Questions:
+1. ~Where do we place digests?~  
+2. ~How does the instructor tag?  (Problem: Potentially a lot of work.)~ (Details under [views](#views) and [workflows](#workflows).).  
+   1. Maximal automation of tags that can be inferred from the workflow and content. Examples:  
+      1. Knowledge graph.  
+      2. Provenance.  
+      3. Course usage.   
+      4. Presentaion with templates.  
+   2. Manually (and largely optional):
+      1. Generic course name.  
+      2. School-specific nomenclature.  
+      3. Course level.  
+      4. Specific concept.  
+      5. Associated questions. (Version. Sets.)  
+      6. (required for archiving automation) Start and end date.   
+3. ~What does the instructor see at the top (i.e. question bank) level?  (Potentially bewildering.)~  (Details under [views](#views) and [workflows](#workflows).).   
+   <img src="/assets/digital-library-screenshot-for-fitt-layout.png" width="400" />
+   1. In the bank, questions are by default listed compactly, and they can be expanded one-by-one in place by a click.  
+   2. In the expanded question, some information will be one-click down for an extra expansion (e.g. historical usage).  
+   3. Questions for a course from the bank by entering from course creation workflow with **breadcrumbs**, providing automatic course-usage metadata association. 
    
 ### 1.3. Cards
 
@@ -252,8 +261,11 @@ _Notes: Cards are semi-independent embeddable interactive units of rich multimed
 
 
 # Views
+<img src="/assets/digital-library-screenshot-for-fitt-layout.png" width="400" />  
+
 
 # Workflows
+<img src="/assets/digital-library-screenshot-for-fitt-layout.png" width="400" />  
 
 # Data
 
