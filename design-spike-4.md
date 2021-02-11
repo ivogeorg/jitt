@@ -2,14 +2,14 @@
 
 [[taag](https://patorjk.com/software/taag/#p=display&f=Big&t=something)]
 ```
-   _____                                    _          _ 
-  / ____|                                  | |        | |
- | (___  _   _ _ __   ___ _ __ ___  ___  __| | ___  __| |
-  \___ \| | | | '_ \ / _ \ '__/ __|/ _ \/ _` |/ _ \/ _` |
-  ____) | |_| | |_) |  __/ |  \__ \  __/ (_| |  __/ (_| |
- |_____/ \__,_| .__/ \___|_|  |___/\___|\__,_|\___|\__,_|
-              | |                                        
-              |_|                                        
+  _____                                                 
+ |_   _|                                                
+   | |  _ __    _ __  _ __ ___   __ _ _ __ ___  ___ ___ 
+   | | | '_ \  | '_ \| '__/ _ \ / _` | '__/ _ \/ __/ __|
+  _| |_| | | | | |_) | | | (_) | (_| | | |  __/\__ \__ \
+ |_____|_| |_| | .__/|_|  \___/ \__, |_|  \___||___/___/
+               | |               __/ |                  
+               |_|              |___/                   
 ```
                                                                        
 Table of Contents
@@ -102,7 +102,8 @@ Table of Contents
          ---------------          
          ```
       4. This is just like adding new folders in Gmail and hierarchical drill-down filtering as in this digital-library screenshot:  
-         <img src="/assets/digital-library-screenshot-for-fitt-layout.png" width="400" />  
+         <img src="/assets/digital-library-screenshot-for-fitt-layout.png" width="400" />   
+         and also like the new [UI features of Chrome](https://www.google.com/chrome/tips/?utm_source=chrome&utm_medium=material-callout&utm_campaign=tipsq1_21&utm_content=did-you-know).  
       5. Automatic clustering can be presented in the same UX/UI, just populating the cluster dimensions and categories.  
    3. Sort student responses in a few ways. For example:
       1. By timestamp.
