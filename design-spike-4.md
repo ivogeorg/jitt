@@ -1,4 +1,4 @@
-# Design spike 3 for [jitt](https://github.com/ivogeorg/jitt)
+# Design spike 4 for [jitt](https://github.com/ivogeorg/jitt)
 
 [[taag](https://patorjk.com/software/taag/#p=display&f=Big&t=something)]
 ```
@@ -12,23 +12,7 @@
                |_|              |___/                   
 ```
                                                                        
-Table of Contents
-=================
 
-* [Design spike 3 for <a href="https://github\.com/ivogeorg/jitt">jitt</a>](#design-spike-3-for-jitt)
-* [User stories](#user-stories)
-  * [1\. Instructor stories](#1-instructor-stories)
-    * [1\.1\. Question banks](#11-question-banks)
-    * [1\.2\. Questions between banks and courses](#12-questions-between-banks-and-courses)
-      * [1\.2\.1\. Two divergent ways to design this:](#121-two-divergent-ways-to-design-this)
-        * [1\.2\.1\.1\. Copies](#1211-copies)
-        * [1\.2\.1\.2\. Metadata](#1212-metadata)
-    * [1\.3\. Cards](#13-cards)
-  * [2\. Student stories](#2-student-stories)
-* [Design spike protocol](#design-spike-protocol)
-* [Views](#views)
-* [Workflows](#workflows)
-* [Data](#data)
 
 # User stories
 
@@ -174,25 +158,7 @@ Table of Contents
    
 ### 1.2. Questions between banks and courses
 
-#### 1.2.1. Two divergent ways to design this:
-
-1. (copies) Course questions are partial snapshots of the question bank. (They are stored independently. Any reintegration will be designed in the full bank-course interation, **post-MVP**. Meanwhile, **a note to the instructor** that this is a "local copy" of the questions will be displayed if they initiate edits on the course question.)  
-2. (metadata) Course questions accumulate a lot of meta-data and versions as they are used in courses, but remain at large, possibly clustered, in the question bank.
-
-##### 1.2.1.1. Copies
-
-```
-  _____                                _           _ 
- |  __ \                              | |         | |
- | |  | | ___ _ __  _ __ ___  ___ __ _| |_ ___  __| |
- | |  | |/ _ \ '_ \| '__/ _ \/ __/ _` | __/ _ \/ _` |
- | |__| |  __/ |_) | | |  __/ (_| (_| | ||  __/ (_| |
- |_____/ \___| .__/|_|  \___|\___\__,_|\__\___|\__,_|
-             | |                                     
-             |_|                                     
-```
-
-##### 1.2.1.2. Metadata
+#### 1.2.1. Metadata
 
 Metadata is "tags", "labels", "GUIDs", ...
 
