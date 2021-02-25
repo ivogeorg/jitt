@@ -249,7 +249,7 @@ _Notes: Cards are semi-independent embeddable interactive units of rich multimed
 9. Design core [data](#data) using:
    1. GUID.  
    2. Description of relation to other _core data_.
-      1. Associations can be many-many, many-one, one-to-many, and one-to-one.  
+      1. Associations can be many-to-many, many-to-one, one-to-many, and one-to-one.  
       2. Mappings are usually one-to-one or one-to-many (dictionary). In the one-to-one case they are _equivalences_.  
    3. **Unique**, e.g. email address.
    3. _Optional_, usually for _non-core data_.
