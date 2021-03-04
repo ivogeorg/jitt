@@ -11,22 +11,8 @@
                | |               __/ |                  
                |_|              |___/                   
 ```
-                                                                       
-Table of Contents
-=================
 
-* [Design spike 4 for <a href="https://github\.com/ivogeorg/jitt">jitt</a>](#design-spike-4-for-jitt)
-* [User stories](#user-stories)
-  * [1\. Instructor stories](#1-instructor-stories)
-    * [1\.1\. Question banks](#11-question-banks)
-    * [1\.2\. Questions between banks and courses](#12-questions-between-banks-and-courses)
-      * [1\.2\.1\. Metadata](#121-metadata)
-    * [1\.3\. Cards](#13-cards)
-  * [2\. Student stories](#2-student-stories)
-* [Design spike protocol](#design-spike-protocol)
-* [Views](#views)
-* [Workflows](#workflows)
-* [Data](#data)
+
 
 
 # User stories
