@@ -323,8 +323,8 @@ _Notes: Workflows should translate into detailed UI specs, e.g. a mesh of views.
 
 # Open questions
 
-1. What about mobile?  
-2. Can question-answering be in the form of short dialog? (Looking forward to LA Bot)
-3. Instead of email, may the questions be served over Teams?
-4. How does one embed an app in Canvas? (In general, the logistics might not be worth it, if we can bypass with social media.)
-5. The system that is taking shape can easily support real-time question generation, answer digestion, and engagement. Should we make sure the design does not preclude this workflow?
+1. ~What about mobile?~ (Yes. Understood.)
+2. ~Can question-answering be in the form of short dialog? (Looking forward to LA Bot)~ (Yes, but not for MVP.)
+3. ~Instead of email, may the questions be served over Teams?~ (Possibly, but not for MVP. There are varying degrees of embedding. Best scenarious are: (1) be taken to the student view of the JiTT website, or (2) have it sufficiently embedded in Canvas or else.)
+4. ~How does one embed an app in Canvas? (In general, the logistics might not be worth it, if we can bypass with social media.)~ (First step would be to have embed code like, for example, Google Forms, where students can answer **inline**.)
+5. ~The system that is taking shape can easily support real-time question generation, answer digestion, and engagement. Should we make sure the design does not preclude this workflow?!~ (Yes. Lightning.)
