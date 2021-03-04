@@ -55,6 +55,7 @@ Table of Contents
 [[toc](#table-of-contents)]
 
 ## 1. Instructor stories
+[[toc](#table-of-contents)]
 
 1. I want to ask my students a small number of _questions_ (see [Question](#question)).  
    1. WarmUp is before class (optional deadline, etc.).  
@@ -159,6 +160,7 @@ Table of Contents
 5. System connects to the LMS via an [LTI](https://community.canvaslms.com/t5/Canvas-Basics-Guide/What-are-External-Apps-LTI-Tools/ta-p/57#:~:text=LTI%20provides%20a%20framework%20through,authenticity%20of%20the%20data%20sent.) so that there is no additional login required, that would be even better.  
 
 ### 1.1. Question banks
+[[toc](#table-of-contents)]
 
 1. Questions can be flagged with conceptual topics.  
 2. Questions can be flagged with question level, most likely to follow adopted and/or conventional scale of academic difficulty. 
@@ -184,6 +186,7 @@ Table of Contents
    
    
 ### 1.2. Metadata: Questions between banks and courses
+[[toc](#table-of-contents)]
 
 Metadata is "tags", "labels", "GUIDs", ...
 
@@ -201,6 +204,7 @@ Question bank has (possibly loosely overlapping) metadata categories:
                  
    
 ### 1.3. Cards
+[[toc](#table-of-contents)]
 
 _Notes: Cards are semi-independent embeddable interactive units of rich multimedia content stored in JSON and MongoDB._
 
@@ -219,6 +223,7 @@ _Notes: Cards are semi-independent embeddable interactive units of rich multimed
 
 
 ## 2. Student stories
+[[toc](#table-of-contents)]
 
 1. I want to have an easy interface to answer _warmup questions_ on any device.  
 2. I want to have alerts about the pre-class deadlines for _warmup questions_.  
@@ -227,6 +232,7 @@ _Notes: Cards are semi-independent embeddable interactive units of rich multimed
 5. I want to be able to review questions, my responses and the grades I got, after the deadline.  
 
 # Design spike protocol
+[[toc](#table-of-contents)]
 
 1. ~Review [stories](#user-stories).~  
 2. ~Answer [open questions](https://github.com/ivogeorg/jitt/blob/main/design-spike-2.md#open-questions).~  
@@ -246,21 +252,27 @@ _Notes: Cards are semi-independent embeddable interactive units of rich multimed
 
 
 # Views
+[[toc](#table-of-contents)]
 
 _Notes: Views are formatted combinations of information, promptings, and editing elements. A view may contain [cards](#12-cards)._
 
 ## Hierarchical drill-down
+[[toc](#table-of-contents)]
 
 <img src="/assets/digital-library-screenshot-for-fitt-layout.png" width="400" />
 
 ## General notes
+[[toc](#table-of-contents)]
+
 1. In the bank, questions are by default listed compactly, and they can be expanded one-by-one in place by a click.  
 2. In the expanded question, some information will be one-click down for an extra expansion (e.g. historical usage).  
 3. Questions for a course from the bank by entering from course creation workflow with **breadcrumbs**, providing automatic course-usage metadata association. 
 
 ## View list
+[[toc](#table-of-contents)]
 
 ### Instructor
+[[toc](#table-of-contents)]
 
 1. [Account](#instructor-account).  
 2. [Question bank: list of questions](#instructor-question-bank).  
@@ -274,8 +286,8 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 10. [Grades for all assignments in a course](#instructor-grades-for-all-assignments-in-a-course).
 11. [Student roster for a course](#instructor-student-roster-for-a-course).
 
-
 ### Student
+[[toc](#table-of-contents)]
 
 1. [Account](#student-account).  
 2. [All courses](#student-all-courses).  
@@ -286,33 +298,53 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 
 
 ## View details
+[[toc](#table-of-contents)]
 
 #### Instructor-Account
+[[toc](#table-of-contents)]
 
 TODO
 
 #### Instructor-Question bank
+[[toc](#table-of-contents)]
 #### Instructor-Question design
+[[toc](#table-of-contents)]
 #### Instructor-All courses  
+[[toc](#table-of-contents)]
 #### Instructor-Course details   
+[[toc](#table-of-contents)]
 #### Instructor-All assignments for a course
+[[toc](#table-of-contents)]
 #### Instructor-Assignment design 
+[[toc](#table-of-contents)]
 #### Instructor-Response review and digest creation      
+[[toc](#table-of-contents)]
 #### Instructor-Digest presentation  
+[[toc](#table-of-contents)]
 #### Instructor-Grades for all assignments in a course  
+[[toc](#table-of-contents)]
 #### Instructor-Student roster for a course  
+[[toc](#table-of-contents)]
 
 #### Student-Account  
+[[toc](#table-of-contents)]
 #### Student-All courses 
+[[toc](#table-of-contents)]
 #### Student-Course details   
+[[toc](#table-of-contents)]
 #### Student-Course assignments with grades
+[[toc](#table-of-contents)]
 #### Student-Assignment questions with grades  
+[[toc](#table-of-contents)]
 #### Student-Assignment digests  
+[[toc](#table-of-contents)]
 
 
 # Workflows
+[[toc](#table-of-contents)]
 
 <img src="/assets/digital-library-screenshot-for-fitt-layout.png" width="400" />  
 
 # Data
+[[toc](#table-of-contents)]
 
