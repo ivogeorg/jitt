@@ -48,9 +48,6 @@ Table of Contents
       1. Questions have "history".  
       2. (ivogeorg-2020-02-03) I think this matter is actually of great importance. Looking forward to a concept-graph representations of human concepts, the structure of the graph might be used to compose questions of various types and difficulty. So, even thought his might be an advanced feature further down the road (that is, not for MVP), the design of the system should anticipate it.
    7. Questions and their versions live like topic-centered clusters in questions banks. 
-   8. Implementation [zoom-in](12-questions-between-banks-and-courses):
-      1. ~Course questions are partial snapshots of the question bank. (They are stored independently. Any reintegration will be designed in the full bank-course interation, **post-MVP**. Meanwhile, **a note to the instructor** that this is a "local copy" of the questions will be displayed if they initiate edits on the course question.)~    
-      2. Course questions accumulate a lot of meta-data and versions as they are used in courses, but remain at large, possibly clustered, in the question bank.
 3. Interaction with questions:
    1. Before the semester. (Assemble a bank of questions for the course.)  
       1. No particular order (e.g. syllabus is in flux).  
@@ -108,13 +105,11 @@ Table of Contents
       2. Alphabetical by last name.
       3. Randomized. 
       4. Instructor requests "Random 15 responses at the top, from those I have seen the least." The system tallies which students are displayed at the top. The next time, those with the lowest tally are shown at the topic.
-4. ~I want to be able to load up questions for the class periods for a whole semester, and have the flexibility to adjust to the way the specific class is moving through the material. Easily move a question from one WarmUp to another, change the order of WarmUps. Here, "WarmUp" is funcitonally synonymous to class period or "Meeting" (see [Meeting](#meeting)). [WarmUP should be distinct from "Meeting" some isntructors give one WarmUp each week, covering 2 class meetings, for example.]  **I think this is addressed earlier. Remove?**~
 5. I want to be able to import questions:
    1. From csv, spreadsheet, etc. and then arrange them.  ==> Bank building.    
-   2. ~From a previous edition of the same class.~  
+   2. From a previous edition of the same class.  
    3. From another instructor that uses the system. ==> Bank building.  
 6. I want to be able to export questions to csv or spreadsheet.  
-7. ~I want to be able to edit the text of a question, both while it is unassigned (that is, in a [question bank](#11-question-banks)) and assigned (so the unassigned and assigned can differ).~  
 8. I want the option to have the computer assign grades automatically (auto-grade) to student responses.  
    1. Select mode:
       1. Auto-grade for participation. For example, on a 0-2 scale, default to 1 for having provided an answer and 0 for no answer. 
@@ -136,12 +131,6 @@ Table of Contents
       3. Collecting instructor feedback on each cluster.
       4. Assembling instructor feedback for for each student (for all answered question).
       5. Mailing feedgack to each student.
-10. ~During class meeting, I want to show some curated information from the warmups:  **This is Digest. Discussed earlier. Remove?**~
-    1. Question text and images. These suppot are points of engagement. For example:
-       1. Remind students what the question was about.   
-       2. Show how many students didn't do it.  
-    2. Aggregate responses categorized by the instructor when reading a sample of student responses. (see slide examples above)
-    3. Anonymous responses from some students, especially the "useful wrong answers".  
 11. Ideally the student view of questions is LMS embeddable (like Canvas rich-editor **Embed**).  
 12. System connects to the LMS via an [LTI](https://community.canvaslms.com/t5/Canvas-Basics-Guide/What-are-External-Apps-LTI-Tools/ta-p/57#:~:text=LTI%20provides%20a%20framework%20through,authenticity%20of%20the%20data%20sent.) so that there is no additional login required, that would be even better.  
 
