@@ -52,6 +52,7 @@ Table of Contents
 
 
 # User stories
+[[toc](#table-of-contents)]
 
 ## 1. Instructor stories
 
