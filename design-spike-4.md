@@ -239,7 +239,7 @@ _Notes: Cards are semi-independent embeddable interactive units of rich multimed
 # Design spike protocol
 
 1. ~Review [stories](#user-stories).~  
-2. Answer [open questions](https://github.com/ivogeorg/jitt/blob/main/design-spike-2.md#open-questions).  
+2. ~Answer [open questions](https://github.com/ivogeorg/jitt/blob/main/design-spike-2.md#open-questions).~  
 3. Integrate notes on [digests](https://github.com/ivogeorg/jitt/blob/main/design-spike-2.md#7-digest).  
 4. Update [stories](#user-stories).  
 5. Integrate notes on [views](https://github.com/ivogeorg/jitt/blob/main/design-spike-2.md#views).  
