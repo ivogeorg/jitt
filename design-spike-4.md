@@ -171,9 +171,7 @@ Table of Contents
    4. Conceptual change models.  
    
    
-### 1.2. Questions between banks and courses
-
-#### 1.2.1. Metadata
+### 1.2. Metadata: Questions between banks and courses
 
 Metadata is "tags", "labels", "GUIDs", ...
 
@@ -189,26 +187,6 @@ Question bank has (possibly loosely overlapping) metadata categories:
 5. Usage stats (e.g. how many times, digests)  
    1. Folks: History, Answer stats, ...
                  
-Questions:
-1. ~Where do we place digests?~  
-2. ~How does the instructor tag?  (Problem: Potentially a lot of work.)~ (Details under [views](#views) and [workflows](#workflows).).  
-   1. Maximal automation of tags that can be inferred from the workflow and content. Examples:  
-      1. Knowledge graph.  
-      2. Provenance.  
-      3. Course usage.   
-      4. Presentaion with templates.  
-   2. Manually (and largely optional):
-      1. Generic course name.  
-      2. School-specific nomenclature.  
-      3. Course level.  
-      4. Specific concept.  
-      5. Associated questions. (Version. Sets.)  
-      6. (required for archiving automation) Start and end date.   
-3. ~What does the instructor see at the top (i.e. question bank) level?  (Potentially bewildering.)~  (Details under [views](#views) and [workflows](#workflows).).   
-   <img src="/assets/digital-library-screenshot-for-fitt-layout.png" width="400" />
-   1. In the bank, questions are by default listed compactly, and they can be expanded one-by-one in place by a click.  
-   2. In the expanded question, some information will be one-click down for an extra expansion (e.g. historical usage).  
-   3. Questions for a course from the bank by entering from course creation workflow with **breadcrumbs**, providing automatic course-usage metadata association. 
    
 ### 1.3. Cards
 
@@ -240,8 +218,8 @@ _Notes: Cards are semi-independent embeddable interactive units of rich multimed
 
 1. ~Review [stories](#user-stories).~  
 2. ~Answer [open questions](https://github.com/ivogeorg/jitt/blob/main/design-spike-2.md#open-questions).~  
-3. Integrate notes on [digests](https://github.com/ivogeorg/jitt/blob/main/design-spike-2.md#7-digest).  
-4. Update [stories](#user-stories).  
+3. ~Integrate notes on [digests](https://github.com/ivogeorg/jitt/blob/main/design-spike-2.md#7-digest).~  
+4. ~Update [stories](#user-stories).~  
 5. Integrate notes on [views](https://github.com/ivogeorg/jitt/blob/main/design-spike-2.md#views).  
 6. Design all [views](#views) based on [stories](#user-stories).  
 7. Integrate notes on [workflows](https://github.com/ivogeorg/jitt/blob/main/design-spike-2.md#workflows). Workflows are a graph of [views](#views).  
@@ -256,7 +234,14 @@ _Notes: Cards are semi-independent embeddable interactive units of rich multimed
 
 
 # Views
-<img src="/assets/digital-library-screenshot-for-fitt-layout.png" width="400" />  
+
+What does the instructor see?
+
+<img src="/assets/digital-library-screenshot-for-fitt-layout.png" width="400" />
+   
+1. In the bank, questions are by default listed compactly, and they can be expanded one-by-one in place by a click.  
+2. In the expanded question, some information will be one-click down for an extra expansion (e.g. historical usage).  
+3. Questions for a course from the bank by entering from course creation workflow with **breadcrumbs**, providing automatic course-usage metadata association. 
 
 
 # Workflows
