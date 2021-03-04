@@ -12,6 +12,43 @@
                |_|              |___/                   
 ```
 
+Table of Contents
+=================
+
+* [Design spike 4 for <a href="https://github\.com/ivogeorg/jitt">jitt</a>](#design-spike-4-for-jitt)
+* [User stories](#user-stories)
+  * [1\. Instructor stories](#1-instructor-stories)
+    * [1\.1\. Question banks](#11-question-banks)
+    * [1\.2\. Metadata: Questions between banks and courses](#12-metadata-questions-between-banks-and-courses)
+    * [1\.3\. Cards](#13-cards)
+  * [2\. Student stories](#2-student-stories)
+* [Design spike protocol](#design-spike-protocol)
+* [Views](#views)
+  * [Hierarchical drill\-down](#hierarchical-drill-down)
+  * [General notes](#general-notes)
+  * [View list](#view-list)
+    * [Instructor](#instructor)
+    * [Student](#student)
+  * [View details](#view-details)
+      * [Instructor\-Account](#instructor-account)
+      * [Instructor\-Question bank](#instructor-question-bank)
+      * [Instructor\-Question design](#instructor-question-design)
+      * [Instructor\-All courses](#instructor-all-courses)
+      * [Instructor\-Course details](#instructor-course-details)
+      * [Instructor\-All assignments for a course](#instructor-all-assignments-for-a-course)
+      * [Instructor\-Assignment design](#instructor-assignment-design)
+      * [Instructor\-Response review and digest creation](#instructor-response-review-and-digest-creation)
+      * [Instructor\-Digest presentation](#instructor-digest-presentation)
+      * [Instructor\-Grades for all assignments in a course](#instructor-grades-for-all-assignments-in-a-course)
+      * [Instructor\-Student roster for a course](#instructor-student-roster-for-a-course)
+      * [Student\-Account](#student-account)
+      * [Student\-All courses](#student-all-courses)
+      * [Student\-Course details](#student-course-details)
+      * [Student\-Course assignments with grades](#student-course-assignments-with-grades)
+      * [Student\-Assignment questions with grades](#student-assignment-questions-with-grades)
+      * [Student\-Assignment digests](#student-assignment-digests)
+* [Workflows](#workflows)
+* [Data](#data)
 
 
 # User stories
@@ -224,31 +261,35 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 
 ### Instructor
 
-1. Account.  
-1. Question bank: list of questions.  
-2. Question design: all details for a question.  
-3. All courses.  
-4. Course details.   
-5. All assignments for a course.
-6. Assignment design. 
-7. Response review and digest creation.      
-8. Digest presentation.  
-9. Grades for all assignments in a course.
-10. Student roster for a course.
+1. [Account](#instructor-account).  
+2. [Question bank: list of questions](#instructor-question-bank).  
+3. [Question design: all details for a question]((#instructor-question-design)).  
+4. [All courses](#instructor-all-courses).  
+5. [Course details](#instructor-course-details).   
+6. [All assignments for a course](#instructor-all-assignments-for-a-course).
+7. [Assignment design]((#instructor-assignment-design)). 
+8. [Response review and digest creation](#instructor-response-review-and-digest-creation).      
+9. [Digest presentation](#instructor-digest-presentation).  
+10. [Grades for all assignments in a course](#instructor-grades-for-all-assignments-in-a-course).
+11. [Student roster for a course](#instructor-student-roster-for-a-course).
 
 
 ### Student
 
-1. Account.  
-1. All courses.  
-2. Course details.  
-3. Course assignments with grades per asst.  
-4. Assignment questions with grades per q.  
-5. Assignment digests.  
+1. [Account](#student-account).  
+2. [All courses](#student-all-courses).  
+3. [Course details](#student-course-details).  
+4. [Course assignments with grades per asst](#student-course-assignments-with-grades).  
+5. [Assignment questions with grades per q](#student-assignment-questions-with-grades).  
+6. [Assignment digests](#student-assignment-digests).  
+
 
 ## View details
 
 #### Instructor-Account
+
+TODO
+
 #### Instructor-Question bank
 #### Instructor-Question design
 #### Instructor-All courses  
