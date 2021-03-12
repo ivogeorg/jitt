@@ -276,12 +276,12 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 
 1. [Account](#instructor-account).  
 2. [Question bank: list of questions](#instructor-question-bank).  
-3. [Question design: all details for a question]((#instructor-question-design)).  
+3. (*) [Question design: all details for a question]((#instructor-question-design)).  
 4. [All courses](#instructor-all-courses).  
 5. [Course details](#instructor-course-details).   
-6. [All assignments for a course](#instructor-all-assignments-for-a-course).
-7. [Assignment design]((#instructor-assignment-design)). 
-8. [Response review and digest creation](#instructor-response-review-and-digest-creation).      
+6. (*) [All assignments for a course](#instructor-all-assignments-for-a-course).
+7. (*) [Assignment design]((#instructor-assignment-design)). 
+8. (*) [Response review and digest creation](#instructor-response-review-and-digest-creation).      
 9. [Digest presentation](#instructor-digest-presentation).  
 10. [Grades for all assignments in a course](#instructor-grades-for-all-assignments-in-a-course).
 11. [Student roster for a course](#instructor-student-roster-for-a-course).
@@ -293,7 +293,7 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 2. [All courses](#student-all-courses).  
 3. [Course details](#student-course-details).  
 4. [Course assignments with grades per asst](#student-course-assignments-with-grades).  
-5. [Assignment questions with grades per q](#student-assignment-questions-with-grades).  
+5. (*) [Assignment questions with grades per q](#student-assignment-questions-with-grades).  
 6. [Assignment digests](#student-assignment-digests).  
 
 
@@ -303,22 +303,125 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 #### Instructor-Account
 [[toc](#table-of-contents)]
 
-TODO
-
 #### Instructor-Question bank
 [[toc](#table-of-contents)]
+
 #### Instructor-Question design
 [[toc](#table-of-contents)]
+
+_This is a view, so graphical elements._
+
+1. Question metadata (free-floating fields).
+   1. Title.
+   2. Type (multiple-choice, multiple-answer, essay).
+   3. Course level (Conceptual, Algebra-based, Calculus-based, Upper-division, Graduate-level).
+   4. Provenance.
+   5. Generic tag(s).
+   6. Rest of the metadata.
+2. Card.
+   1. Type-specific template.
+   2. Question multimedia content and narrative. 
+   3. Choices multimedia content and narratives.
+
 #### Instructor-All courses  
 [[toc](#table-of-contents)]
 #### Instructor-Course details   
 [[toc](#table-of-contents)]
+
 #### Instructor-All assignments for a course
 [[toc](#table-of-contents)]
+
+_This is a view, so graphical elements._
+
+1. Course metadata.
+
+2. Ordered assignments. For each:
+   1. Number.
+   2. Topic.
+   3. Type.
+   4. Dates.
+
+3. Actions.
+   1. Create/add new assignment.
+   2. Delete/remove assignment.
+   3. Reorder assignments.
+
+
 #### Instructor-Assignment design 
 [[toc](#table-of-contents)]
+
+_This is a view, so graphical elements._
+
+1. Assignment metadata & content.
+   1. Number (in course).
+   2. Topic.
+   3. Type (warmup, lightning).
+   4. Dates (available, due).
+   5. Instructions.
+
+2. Ordered questions. For each:
+   1. Title.
+   2. Card.
+   3. Grading mode.
+   4. Grading scale for mode.
+
+3. Actions.
+   1. Create/add new question.
+   2. Delete/remove question.
+   3. Reorder questions.
+
+
 #### Instructor-Response review and digest creation      
 [[toc](#table-of-contents)]
+
+_This is a view, so graphical elements._
+
+1. Ordered questions for assignment. For each:
+   1. Card.
+   2. Responses for question type.
+2. Responses. For each:
+   1. Types:
+      1. For choices:
+         1. Picked.
+         2. Correct/incorrect, if applicable.
+         3. Adjustable auto-grade.
+         4. Summary stats.
+      2. Essays:
+         1. Narrative.
+         2. Adjustable auto-grade.
+         3. Include in digest (single (partial) response).
+         4. Cluster(s), shown immediately at creation time.
+         3. Highlighted for careful review.
+         4. Student digest tally. _(To make sure all students get their responses discussed at least once.)_
+         5. Student email tally. 
+         6. Highlight tally.
+         2. Include in digest.
+
+3. Digest fields.
+   1. Question types:
+      1. Choices:
+         1. Summary stats.
+      2. Essays:
+         1. Sample responses, possibly editable.
+         2. Categorization/clustering.
+
+4. Response view actions.
+   1. Pick N number of random responses for careful reading from the lowest highlight tally.
+   2. Order responses.
+   3. Adjuct auto-grade or assign grade.
+   4. Show/hide student identification data.
+
+5. Digest actions. (category ~ cluster)
+   1. Create new category.
+   2. Add response to existing or new category, updating digest tally.
+   3. Edit responses.
+   4. Comments.
+
+6. Student interaction actions.
+   1. Email individual student from template, updating email tally.
+   2. Actions for using automatic aggregate clustering results (a la [sense education](https://www.sense.education/)). (non-MVP)
+
+
 #### Instructor-Digest presentation  
 [[toc](#table-of-contents)]
 #### Instructor-Grades for all assignments in a course  
@@ -334,8 +437,12 @@ TODO
 [[toc](#table-of-contents)]
 #### Student-Course assignments with grades
 [[toc](#table-of-contents)]
+
 #### Student-Assignment questions with grades  
 [[toc](#table-of-contents)]
+
+
+
 #### Student-Assignment digests  
 [[toc](#table-of-contents)]
 
