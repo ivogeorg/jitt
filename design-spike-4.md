@@ -276,12 +276,12 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 
 1. [Account](#instructor-account).  
 2. [Question bank: list of questions](#instructor-question-bank).  
-3. (*) [Question design: all details for a question]((#instructor-question-design)).  
+3. [Question design: all details for a question]((#instructor-question-design)).  
 4. [All courses](#instructor-all-courses).  
 5. [Course details](#instructor-course-details).   
-6. (*) [All assignments for a course](#instructor-all-assignments-for-a-course).
-7. (*) [Assignment design]((#instructor-assignment-design)). 
-8. (*) [Response review and digest creation](#instructor-response-review-and-digest-creation).      
+6. [All assignments for a course](#instructor-all-assignments-for-a-course).
+7. [Assignment design]((#instructor-assignment-design)). 
+8. [Response review and digest creation](#instructor-response-review-and-digest-creation).      
 9. [Digest presentation](#instructor-digest-presentation).  
 10. [Grades for all assignments in a course](#instructor-grades-for-all-assignments-in-a-course).
 11. [Student roster for a course](#instructor-student-roster-for-a-course).
@@ -293,7 +293,7 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 2. [All courses](#student-all-courses).  
 3. [Course details](#student-course-details).  
 4. [Course assignments with grades per asst](#student-course-assignments-with-grades).  
-5. (*) [Assignment questions with grades per q](#student-assignment-questions-with-grades).  
+5. [Assignment questions with grades per q](#student-assignment-questions-with-grades).  
 6. [Assignment digests](#student-assignment-digests).  
 
 
