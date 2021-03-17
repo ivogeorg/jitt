@@ -299,15 +299,16 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 
 ## View details
 [[toc](#table-of-contents)]
+[[list](#instructor)]
 
 #### Instructor-Account
-[[toc](#table-of-contents)]
+[[list](#instructor)]
 
 #### Instructor-Question bank
-[[toc](#table-of-contents)]
+[[list](#instructor)]
 
 #### Instructor-Question design
-[[toc](#table-of-contents)]
+[[list](#instructor)]
 
 _This is a view, so graphical elements._
 
@@ -324,12 +325,12 @@ _This is a view, so graphical elements._
    3. Choices multimedia content and narratives.
 
 #### Instructor-All courses  
-[[toc](#table-of-contents)]
+[[list](#instructor)]
 #### Instructor-Course details   
-[[toc](#table-of-contents)]
+[[list](#instructor)]
 
 #### Instructor-All assignments for a course
-[[toc](#table-of-contents)]
+[[list](#instructor)]
 
 _This is a view, so graphical elements._
 
@@ -348,7 +349,7 @@ _This is a view, so graphical elements._
 
 
 #### Instructor-Assignment design 
-[[toc](#table-of-contents)]
+[[list](#instructor)]
 
 _This is a view, so graphical elements._
 
@@ -372,7 +373,7 @@ _This is a view, so graphical elements._
 
 
 #### Instructor-Response review and digest creation      
-[[toc](#table-of-contents)]
+[[list](#instructor)]
 
 _This is a view, so graphical elements._
 
@@ -423,28 +424,28 @@ _This is a view, so graphical elements._
 
 
 #### Instructor-Digest presentation  
-[[toc](#table-of-contents)]
+[[list](#instructor)]
 #### Instructor-Grades for all assignments in a course  
-[[toc](#table-of-contents)]
+[[list](#instructor)]
 #### Instructor-Student roster for a course  
-[[toc](#table-of-contents)]
+[[list](#instructor)]
 
 #### Student-Account  
-[[toc](#table-of-contents)]
+[[list](#student)]
 #### Student-All courses 
-[[toc](#table-of-contents)]
+[[list](#student)]
 #### Student-Course details   
-[[toc](#table-of-contents)]
+[[list](#student)]
 #### Student-Course assignments with grades
-[[toc](#table-of-contents)]
+[[list](#student)]
 
 #### Student-Assignment questions with grades  
-[[toc](#table-of-contents)]
+[[list](#student)]
 
 
 
 #### Student-Assignment digests  
-[[toc](#table-of-contents)]
+[[list](#student)]
 
 
 # Workflows
