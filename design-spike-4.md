@@ -304,8 +304,23 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 #### Instructor-Account
 [[list](#instructor)]
 
+_This is a view, so graphical elements._
+
+1. Update password
+2. Change email (optional, not MVP)
+3. Time zone
+4. Toggle automatic daylight savings adjustment
+
+
 #### Instructor-Question bank
 [[list](#instructor)]
+
+_This is a view, so graphical elements._
+
+1. Compact list of questions with a default set of metadata displayed with each (type, course level, last course usage, etc.)
+  1. "Add to Assignment" button
+  1. Click to expand for a full view of the card, and additional metadata, such as historical usage, etc. 
+
 
 #### Instructor-Question design
 [[list](#instructor)]
