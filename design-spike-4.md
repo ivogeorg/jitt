@@ -285,7 +285,7 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 [[toc](#table-of-contents)]
 
 1. [Account](#instructor-account). **[DONE]**  
-2. [Question list](#instructor-question-bank).  
+2. [Question list](#instructor-question-list).  
 3. [Question design: all details for a question]((#instructor-question-design)). **[DONE]**  
 4. [All courses](#instructor-all-courses).  
 5. [Course details](#instructor-course-details).   
