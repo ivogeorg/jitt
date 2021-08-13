@@ -12,43 +12,6 @@
                |_|              |___/                   
 ```
 
-Table of Contents
-=================
-
-* [Design spike 4 for <a href="https://github\.com/ivogeorg/jitt">jitt</a>](#design-spike-4-for-jitt)
-* [User stories](#user-stories)
-  * [1\. Instructor stories](#1-instructor-stories)
-    * [1\.1\. Question banks](#11-question-banks)
-    * [1\.2\. Metadata: Questions between banks and courses](#12-metadata-questions-between-banks-and-courses)
-    * [1\.3\. Cards](#13-cards)
-  * [2\. Student stories](#2-student-stories)
-* [Design spike protocol](#design-spike-protocol)
-* [Views](#views)
-  * [Hierarchical drill\-down](#hierarchical-drill-down)
-  * [General notes](#general-notes)
-  * [View list](#view-list)
-    * [Instructor](#instructor)
-    * [Student](#student)
-  * [View details](#view-details)
-      * [Instructor\-Account](#instructor-account)
-      * [Instructor\-Question bank](#instructor-question-bank)
-      * [Instructor\-Question design](#instructor-question-design)
-      * [Instructor\-All courses](#instructor-all-courses)
-      * [Instructor\-Course details](#instructor-course-details)
-      * [Instructor\-All assignments for a course](#instructor-all-assignments-for-a-course)
-      * [Instructor\-Assignment design](#instructor-assignment-design)
-      * [Instructor\-Response review and digest creation](#instructor-response-review-and-digest-creation)
-      * [Instructor\-Digest presentation](#instructor-digest-presentation)
-      * [Instructor\-Grades for all assignments in a course](#instructor-grades-for-all-assignments-in-a-course)
-      * [Instructor\-Student roster for a course](#instructor-student-roster-for-a-course)
-      * [Student\-Account](#student-account)
-      * [Student\-All courses](#student-all-courses)
-      * [Student\-Course details](#student-course-details)
-      * [Student\-Course assignments with grades](#student-course-assignments-with-grades)
-      * [Student\-Assignment questions with grades](#student-assignment-questions-with-grades)
-      * [Student\-Assignment digests](#student-assignment-digests)
-* [Workflows](#workflows)
-* [Data](#data)
 
 
 # User stories
@@ -285,26 +248,26 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 [[toc](#table-of-contents)]
 
 1. [Account](#instructor-account). **[DONE]**  
-2. [Question list](#instructor-question-list).  
-3. [Question design: all details for a question]((#instructor-question-design)). **[DONE]**  
-4. [All courses](#instructor-all-courses).  
-5. [Course details](#instructor-course-details).   
+2. [Question list](#instructor-question-list). **[TODO]**   
+3. [Question design: all details for a question](#instructor-question-design). **[DONE]**  
+4. [All courses](#instructor-all-courses). **[TODO]**  
+5. [Course details](#instructor-course-details). **[TODO]**  
 6. [All assignments for a course](#instructor-all-assignments-for-a-course). **[DONE]**
 7. [Assignment design]((#instructor-assignment-design)). **[DONE]** 
 8. [Response review and digest creation](#instructor-response-review-and-digest-creation). **[DONE]**      
-9. [Digest presentation](#instructor-digest-presentation).  
-10. [Grades for all assignments in a course](#instructor-grades-for-all-assignments-in-a-course).
-11. [Student roster for a course](#instructor-student-roster-for-a-course).
+9. [Digest presentation](#instructor-digest-presentation). **[TODO]**  
+10. [Grades for all assignments in a course](#instructor-grades-for-all-assignments-in-a-course). **[TODO]**  
+11. [Student roster for a course](#instructor-student-roster-for-a-course). **[TODO]**  
 
 ### Student
 [[toc](#table-of-contents)]
 
-1. [Account](#student-account).  
-2. [All courses](#student-all-courses).  
-3. [Course details](#student-course-details).  
-4. [Course assignments with grades per asst](#student-course-assignments-with-grades).  
-5. [Assignment questions with grades per q](#student-assignment-questions-with-grades).  
-6. [Assignment digests](#student-assignment-digests).  
+1. [Account](#student-account). **[TODO]**    
+2. [All courses](#student-all-courses). **[TODO]**    
+3. [Course details](#student-course-details). **[TODO]**    
+4. [Course assignments with grades per asst](#student-course-assignments-with-grades). **[TODO]**    
+5. [Assignment questions with grades per q](#student-assignment-questions-with-grades). **[TODO]**    
+6. [Assignment digests](#student-assignment-digests). **[TODO]**    
 
 
 ## View details
@@ -369,6 +332,7 @@ _This is a view, so graphical elements._
 
 #### Instructor-All courses  
 [[list](#instructor)]
+
 #### Instructor-Course details   
 [[list](#instructor)]
 
@@ -469,17 +433,23 @@ _This is a view, so graphical elements._
 
 #### Instructor-Digest presentation  
 [[list](#instructor)]
+
 #### Instructor-Grades for all assignments in a course  
 [[list](#instructor)]
+
 #### Instructor-Student roster for a course  
 [[list](#instructor)]
 
+
 #### Student-Account  
 [[list](#student)]
+
 #### Student-All courses 
 [[list](#student)]
+
 #### Student-Course details   
 [[list](#student)]
+
 #### Student-Course assignments with grades
 [[list](#student)]
 
