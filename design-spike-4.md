@@ -12,7 +12,43 @@
                |_|              |___/                   
 ```
 
+Table of Contents
+=================
 
+* [Design spike 4 for <a href="https://github\.com/ivogeorg/jitt">jitt</a>](#design-spike-4-for-jitt)
+* [User stories](#user-stories)
+  * [1\. Instructor stories](#1-instructor-stories)
+    * [1\.1\. Question lists](#11-question-lists)
+    * [1\.2\. Metadata](#12-metadata)
+    * [1\.3\. Cards](#13-cards)
+  * [2\. Student stories](#2-student-stories)
+* [Design spike protocol](#design-spike-protocol)
+* [Views](#views)
+  * [Hierarchical drill\-down](#hierarchical-drill-down)
+  * [General notes](#general-notes)
+  * [View list](#view-list)
+    * [Instructor](#instructor)
+    * [Student](#student)
+  * [View details](#view-details)
+      * [Instructor\-Account](#instructor-account)
+      * [Instructor\-Question list](#instructor-question-list)
+      * [Instructor\-Question design](#instructor-question-design)
+      * [Instructor\-All courses](#instructor-all-courses)
+      * [Instructor\-Course details](#instructor-course-details)
+      * [Instructor\-All assignments for a course](#instructor-all-assignments-for-a-course)
+      * [Instructor\-Assignment design](#instructor-assignment-design)
+      * [Instructor\-Response review and digest creation](#instructor-response-review-and-digest-creation)
+      * [Instructor\-Digest presentation](#instructor-digest-presentation)
+      * [Instructor\-Grades for all assignments in a course](#instructor-grades-for-all-assignments-in-a-course)
+      * [Instructor\-Student roster for a course](#instructor-student-roster-for-a-course)
+      * [Student\-Account](#student-account)
+      * [Student\-All courses](#student-all-courses)
+      * [Student\-Course details](#student-course-details)
+      * [Student\-Course assignments with grades](#student-course-assignments-with-grades)
+      * [Student\-Assignment questions with grades](#student-assignment-questions-with-grades)
+      * [Student\-Assignment digests](#student-assignment-digests)
+* [Workflows](#workflows)
+* [Data](#data)
 
 # User stories
 [[toc](#table-of-contents)]
