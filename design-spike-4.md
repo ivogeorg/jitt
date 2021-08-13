@@ -159,11 +159,14 @@ Table of Contents
 4. Ideally the student view of questions is LMS embeddable (like Canvas rich-editor **Embed**).  
 5. System connects to the LMS via an [LTI](https://community.canvaslms.com/t5/Canvas-Basics-Guide/What-are-External-Apps-LTI-Tools/ta-p/57#:~:text=LTI%20provides%20a%20framework%20through,authenticity%20of%20the%20data%20sent.) so that there is no additional login required, that would be even better.  
 
-### 1.1. Question banks
+### 1.1. Question lists
 [[toc](#table-of-contents)]
 
-1. Questions can be flagged with conceptual topics.  
-2. Questions can be flagged with question level, most likely to follow adopted and/or conventional scale of academic difficulty. 
+_Notes: (Was Question banks) Questions banks work like Google Photos albumns. They are just extra metadata associated with particular questions, which are the main unit of data in the application. A question bank is not an object (programmatically or semantically), just an associative piece of metadata on the questions._
+
+1. Questions can be flagged with subject.  
+2. Questions can be flagged with conceptual topics.  
+3. Questions can be flagged with question level, most likely to follow adopted and/or conventional scale of academic difficulty. 
    1. For example, for physics, these can be:
       1. Conceptual.  
       2. Algebra-based.   
@@ -172,25 +175,32 @@ Table of Contents
       5. Graduate-level.  
    2. This is a first step toward figuring out how to maintain domain knowledge in a hierarchy of academic difficulty.
    3. In general, these levels should be configurable by the instructor, though concensus and normativity are desired.  
-3. Quesitons can be searched by users based on:
-   1. Author.  
-   2. Topic.  
-   3. Question level.  
-   4. Date.  
-   5. Course name.   
-4. Querstion banks are closely related to other forms of knowledge organization.  
+4. Quesitons can be searched by users based on:
+   1. Author. 
+   2. Subject. 
+   3. Topic.  
+   4. Question level.  
+   5. Date.  
+   6. Course name.   
+5. Question banks are closely related to other forms of knowledge organization.  
    1. Concept graphs.  
    2. Concept inventories.  
    3. Curricula recommendations (e.g. [ce2016](http://www.acm.org/binaries/content/assets/education/ce2016-final-report.pdf)).  
    4. Conceptual change models.  
    
    
-### 1.2. Metadata: Questions between banks and courses
+### 1.2. Metadata
 [[toc](#table-of-contents)]
 
-Metadata is "tags", "labels", "GUIDs", ...
+General notes:
+1. Metadata is "tags", "labels", "GUIDs", ...  
+2. Metadata serves as filters and automatically clusters questions:
+   1. Some or all metadata will be clickable for filtering and unclickable for removing the filter.   
+4. Questions banks are just extra metadata:  
+   1. As in Google Photos, there is no copying, just assiation through metadata and filtering on the fly.  
+   2. Also, any question that is edited propagates these edits to all question banks that contain it. There is only one version of the question.  
 
-Question bank has (possibly loosely overlapping) metadata categories:
+Metadata categories, possibly loosely overlapping:  
 1. Knowledge graph (e.g. hierarchy of concepts, clustering of question versions, question sets that are asked together)  
    1. Folks: Concepts, Conceptual association, ...
 2. Course usage (e.g. course level, course-semester-assignment, class-n-answers)  
@@ -266,7 +276,7 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 
 1. In the bank, questions are by default listed compactly, and they can be expanded one-by-one in place by a click.  
 2. In the expanded question, some information will be one-click down for an extra expansion (e.g. historical usage).  
-3. Questions for a course from the bank by entering from course creation workflow with **breadcrumbs**, providing automatic course-usage metadata association. 
+3. _Questions for a course from the bank by entering from course creation workflow with **breadcrumbs**, providing automatic course-usage metadata association._ (TODO: ???)   
 
 ## View list
 [[toc](#table-of-contents)]
@@ -274,8 +284,8 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 ### Instructor
 [[toc](#table-of-contents)]
 
-1. [Account](#instructor-account).  
-2. [Question bank: list of questions](#instructor-question-bank).  
+1. [Account](#instructor-account). **[DONE]**  
+2. [Question list](#instructor-question-bank).  
 3. [Question design: all details for a question]((#instructor-question-design)). **[DONE]**  
 4. [All courses](#instructor-all-courses).  
 5. [Course details](#instructor-course-details).   
@@ -312,15 +322,30 @@ _This is a view, so graphical elements._
 4. Toggle automatic daylight savings adjustment
 
 
-#### Instructor-Question bank
+#### Instructor-Question list
 [[list](#instructor)]
 
 _This is a view, so graphical elements._
 
-1. Compact list of questions with a default set of metadata displayed with each (type, course level, last course usage, etc.)
-  1. "Add to Assignment" button
-  2. "Duplicate" button that begins the authoring of a new question that is a copy of the specific question.
-  3. Click to expand for a full view of the card, and additional metadata, such as historical usage, etc. 
+1. At the top level, there are all the questions.
+   1. Only 1-2 pages at a time are loaded at the same time (a la maps, photos, etc. etc.).
+   2. It is scrollable, with dynamic loading of more pages.
+   3. It also shows all filters at the top.
+   4. Filters are applied as _intersection_ (AND), **not** _union_ (OR).
+2. By default, the list view shows a compact list of questions with a default set of data and metadata displayed with each:
+   1. Title.
+   2. Subject.
+   3. Topic.
+   4. TODO (Jeff)
+2. Each question can be individually expanded, in place, into a box, containing:
+   1. All data and metadata except choices.
+
+TODO (Ivo & Jeff):
+_1. Do we filter and then add?_ (Mechanics of working with a list of questions!)  
+
+Actions:
+1. "Add to Assignment" button.
+2. TODO (Ivo & Jeff).
 
 
 #### Instructor-Question design
@@ -329,14 +354,16 @@ _This is a view, so graphical elements._
 _This is a view, so graphical elements._
 
 1. Question metadata (free-floating fields).
-   1. Title.
-   2. Type (multiple-choice, multiple-answer, essay).
-   3. Course level (Conceptual, Algebra-based, Calculus-based, Upper-division, Graduate-level).
-   4. Provenance.
-   5. Generic tag(s).
-   6. Rest of the metadata.
+   1. Title. (Note: The implicit hierarchy here is Subject-->Topic-->Title, like Physics-->Gravity-->Satalellite crashing potential energy.)  
+   2. Subject.
+   3. Topic.
+   4. Type (multiple-choice, multiple-answer, essay).
+   5. Course level (Conceptual, Algebra-based, Calculus-based, Upper-division, Graduate-level).
+   6. Provenance.
+   7. Generic tag(s).
+   8. Rest of the metadata.
 2. Card.
-   1. Type-specific template.
+   1. Type-specific template (incl. title, stem (text), choices, etc.).
    2. Question multimedia content and narrative. 
    3. Choices multimedia content and narratives.
 
@@ -371,10 +398,11 @@ _This is a view, so graphical elements._
 
 1. Assignment metadata & content.
    1. Number (in course).
-   2. Topic.
-   3. Type (warmup, lightning).
-   4. Dates (available, due).
-   5. Instructions.
+   2. Subject.
+   3. Topic.
+   4. Type (warmup, lightning).
+   5. Dates (available, due).
+   6. Instructions.
 
 2. Ordered questions. For each:
    1. Title.
