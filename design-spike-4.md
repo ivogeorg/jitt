@@ -273,7 +273,7 @@ _Notes: Views are formatted combinations of information, promptings, and editing
 ## General notes
 [[toc](#table-of-contents)]
 
-1. In the bank, questions are by default listed compactly, and they can be expanded one-by-one in place by a click.  
+1. In the question list, questions are by default listed compactly, and they can be expanded one-by-one in place by a click.  
 2. In the expanded question, some information will be one-click down for an extra expansion (e.g. historical usage).  
 3. _Questions for a course from the bank by entering from course creation workflow with **breadcrumbs**, providing automatic course-usage metadata association._ (TODO: ???)   
 
@@ -335,7 +335,8 @@ _This is a view, so graphical elements._
    1. Title.
    2. Subject.
    3. Topic.
-   4. TODO (Jeff)
+   4. Type
+   5. Provenance
 2. Each question can be individually expanded, in place, into a box, containing:
    1. All data and metadata except choices.
 
@@ -344,7 +345,8 @@ _1. Do we filter and then add?_ (Mechanics of working with a list of questions!)
 
 Actions:
 1. "Add to Assignment" button.
-2. TODO (Ivo & Jeff).
+2. Duplicate question. Meaning begin creating a new question, but with almost all the details of the duplicated question already present.
+3. TODO (Ivo & Jeff).
 
 
 #### Instructor-Question design
@@ -387,8 +389,9 @@ _This is a view, so graphical elements._
 
 3. Actions.
    1. Create/add new assignment.
-   2. Delete/remove assignment.
-   3. Reorder assignments.
+   2. Duplicate assignment.
+   3. Delete/remove assignment.
+   4. Reorder assignments.
 
 
 #### Instructor-Assignment design 
@@ -412,8 +415,9 @@ _This is a view, so graphical elements._
 
 3. Actions.
    1. Create/add new question.
-   2. Delete/remove question.
-   3. Reorder questions.
+   2. Duplicate question.
+   3. Delete/remove question.
+   4. Reorder questions.
 
 
 #### Instructor-Response review and digest creation      
