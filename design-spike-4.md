@@ -319,7 +319,8 @@ _This is a view, so graphical elements._
 
 1. Compact list of questions with a default set of metadata displayed with each (type, course level, last course usage, etc.)
   1. "Add to Assignment" button
-  1. Click to expand for a full view of the card, and additional metadata, such as historical usage, etc. 
+  2. "Duplicate" button that begins the authoring of a new question that is a copy of the specific question.
+  3. Click to expand for a full view of the card, and additional metadata, such as historical usage, etc. 
 
 
 #### Instructor-Question design
