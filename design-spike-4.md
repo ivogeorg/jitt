@@ -92,6 +92,7 @@ Table of Contents
       5. Change the expected clustering.  
    4. After the semester. (Looking back on your life as an instructor :D)
       1. I want to be able to export questions to csv or spreadsheet.  
+   5. Searching (TODO: Jeff & Ivo).  
 4. Interactions with responses:
    1. Grading.  
       1. Select among the following grading modes:
@@ -340,13 +341,19 @@ _This is a view, so graphical elements._
 2. Each question can be individually expanded, in place, into a box, containing:
    1. All data and metadata except choices.
 
-TODO (Ivo & Jeff):
-_1. Do we filter and then add?_ (Mechanics of working with a list of questions!)  
+TODO (Ivo & Jeff) What are the mechanics of working with a list of questions?:  
+1. Do we filter and then add to a course? This means applying a new label to a selection of questions.   
+2. How does filtering work?  
+   1. The 3 main set operations are: union (OR), intersection (AND), and negation (NOT). In the extreme, we can apply arbitrarily complex set-alebraic expressions on a set of questions with multiple filtering criteria. Nobody really does that on the Web, because the complexity quickly moves beyond human cognitive capabilities. Even Google tried and then hid this under "Advanced options", instead focusing on making search results most relevant (heuristics, personalization, etc.). This might be aleviated by a very clever UI/UX though even that should be grounded in currently expected graphical dynamics.  
+   2. If we default to intersection (AND), we can use _breadcrumbs_ showing at the top of the list, in the order of their applicaion (e.g. Physics (subject) | Gravity (topic) | PHY 1000 (class) | Essay (question type) ).  
+   3. In the expanded label box for a question in a question list, how do we show labels coming from discrete label sets/categories (e.g. question type is {"multiple-choice", "multiple-answer", "essay"}, jitt type is {"warmup", "lightning"}, etc.). Per the stories, we want to be able to create such categories on the fly during review!    
+   4. In the compact view, what labels are shown? Is this fixed or does it depend on some dynamic features (e.g. order of creation, explicit ordering, etc.)?    
+   5. **(MAJOR DESIGN ISSUE)** This should probably be co-designed with Question design, so as to sensibly/intuitively divide the functionality between List and Single Question and not pile everything in one or the other or have an inconsistent sets of functionality. This may very well require involving the Workflows, and iterate a few times between Views and Workflows.  
 
 Actions:
 1. "Add to Assignment" button.
 2. Duplicate question. Meaning begin creating a new question, but with almost all the details of the duplicated question already present.
-3. TODO (Ivo & Jeff).
+3. TODO (Ivo & Jeff). (See previous TODO for various issues to resolve.)  
 
 
 #### Instructor-Question design
