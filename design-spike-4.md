@@ -93,6 +93,25 @@ Table of Contents
    4. After the semester. (Looking back on your life as an instructor :D)
       1. I want to be able to export questions to csv or spreadsheet.  
    5. Searching (TODO: Jeff & Ivo).  
+   6. Sharing & author rights (TODO: Jeff & Ivo). Preliminary notes:  
+      1. Jeff: "Thanks for your work on this, Ivo. It is indeed a non-trivial project. I need to make sure I understand how the final product works well enough that I can help maintain and update it.
+
+          Thinking through something after we talked:
+          Suppose I create a question that has a unique identifier: Q24. That question has a Title, Stem, Notes, Image, etc. It also has a bunch of tags (Subject, Topic, Class>Assignment, Level, Provenance, Type, etc.).
+
+          One problem I see is along the lines of "Editing rights"
+          Can someone else edit the question? Clearly they have to be able to add tags, in order to put it in their own Class>Assignment. But can they add other tags? Can they also remove tags?
+          The problem that could arise is that someone else starts adding tags that don't apply to my question, or they remove tags that I want to be there.
+          Roughly speaking, this is about "editing rights" in some way. Seems pretty messy. This may cause us to go back to a discussion we had in the past where we debated about how copying questions should work.
+
+          Brainstorming solutions:  
+          Could there be a drop-down tag with "Shared/Master/Personal/" as the options?  
+          A "Shared" question is fair game. Anyone can edit any part of it.  
+          A "Master" can be viewed by anyone, but only the user that created it can edit it. Everyone else can only copy it.  
+          A "Personal" question is just yours. Only you can edit it and only you can see it.  
+          Perhaps the default is that when you copy a question it gets tagged as Personal. You have to actively choose to make it Shared or Master.".  
+      2. Ivo: "Thanks for the comments! I have worked on a large Web project involving right, content provenance, true ownership, and inheritance. My dissertation was partly on this. I will write more later. In short, don't worry about it, we've got this!".  
+      3. Ivo: "I like your solutions ideas. Those make for a very clean ecosystem. I would have picked strategies along these lines based on my experience, too: minimal, functional, and efficient. We just need to brainstorm a bit about the long-term potential of the application we are creating and its scaling to an arbitrarily large user base. That might or might not require migrating to a larger server base, but we'll cross that bridge when we get to it.".   
 4. Interactions with responses:
    1. Grading.  
       1. Select among the following grading modes:
@@ -349,6 +368,14 @@ TODO (Ivo & Jeff) What are the mechanics of working with a list of questions?:
    3. In the expanded label box for a question in a question list, how do we show labels coming from discrete label sets/categories (e.g. question type is {"multiple-choice", "multiple-answer", "essay"}, jitt type is {"warmup", "lightning"}, etc.). Per the stories, we want to be able to create such categories on the fly during review!    
    4. In the compact view, what labels are shown? Is this fixed or does it depend on some dynamic features (e.g. order of creation, explicit ordering, etc.)?    
    5. **(MAJOR DESIGN ISSUE)** This should probably be co-designed with Question design, so as to sensibly/intuitively divide the functionality between List and Single Question and not pile everything in one or the other or have an inconsistent sets of functionality. This may very well require involving the Workflows, and iterate a few times between Views and Workflows.  
+
+A hand sketch as visual context to the questions and design decisions above:  
+
+<img src="/assets/sketch-q-list-view.jpg" width="400" />  
+
+Notes:  
+1. Bottommost sketch decided on.  
+2. TODO (Ivo): For next design spike, organize descriptions of design decisions with sketches/wireframes/etc.  
 
 Actions:
 1. "Add to Assignment" button.
