@@ -402,6 +402,11 @@ _This is a view, so graphical elements._
    2. Question multimedia content and narrative. 
    3. Choices multimedia content and narratives.
 
+
+TODO (Jeff & Ivo): 
+1. Canonical and/or normative correct answers should be part of the Question data.  
+2. We should think about organizing (common) misconceptions!!!   
+
 #### Instructor-All courses  
 [[list](#instructor)]
 
